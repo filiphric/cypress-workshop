@@ -1,4 +1,4 @@
-## ☀️ Vytvorenie projektu v Cypress
+## 💻 Vytvorenie projektu v Cypress
 
 ### 📚 Naučíš sa
 

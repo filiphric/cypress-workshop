@@ -1,4 +1,4 @@
-## ☀️ Part 2: Pridávanie položiek v TodoMVC
+## 💻 Pridávanie položiek v TodoMVC
 
 ### 📚 Naučíš sa
 

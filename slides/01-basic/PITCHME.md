@@ -1,4 +1,4 @@
-## ☀️ Part 1: Základné príkazy
+## 💻 Základné príkazy
 
 ### 📚 Naučíš sa
 

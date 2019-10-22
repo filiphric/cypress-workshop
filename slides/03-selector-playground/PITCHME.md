@@ -1,20 +1,20 @@
-## ☀️ Part 3: Selector playground
+## 💻 Hráme sa so selectormi
 
-### 📚 You will learn
+### 📚 Naučíš sa
 
-- Cypress Selector Playground tool
-- best practices for selecting elements
-
-+++
-
-- keep `todomvc` app running
-- open `03-selector-playground/spec.js`
+- používať Cypress Selector Playground
+- najlepšie praktiky pri vyberaní selectorov
 
 +++
 
-> How do we select element in `cy.get(...)`?
+- maj aplikáciu `todomvc` stále zapnutú
+- otvor si `03-selector-playground/spec.js`
 
-- Browser's DevTools can suggest selector
++++
+
+> Ako získať správny selector pre `cy.get(...)`?
+
+- Pomôžu nám Chrome DevTools
 
 +++
 
