@@ -65,7 +65,7 @@ na začiatok filu pridaj
 ```
 +++
 @snap[west]
-#### Varianty
+### Varianty
 ```js
 getBy
 getAllBy
@@ -76,7 +76,7 @@ findllBy
 ``` 
 @snapend
 @snap[east]
-#### Query
+### Query
 ```js
 ByLabelText
 ByPlaceholderText
@@ -103,15 +103,7 @@ ByTestId
 +++
 
 ## DevTools selector plugin
-@snap[west]
-#### Varianty
+in Cypress browser, install css [selector helper](https://chrome.google.com/webstore/detail/css-selector-helper-for-c/gddgceinofapfodcekopkjjelkbjodin)
 
 ![Best practice](/slides/03-selector-playground/img/selector-helper.png)
 
-@snapend
-
-@snap[east]
-#### Query
-
-in Cypress browser, install css [selector helper](https://chrome.google.com/webstore/detail/css-selector-helper-for-c/gddgceinofapfodcekopkjjelkbjodin)
-@snapend
