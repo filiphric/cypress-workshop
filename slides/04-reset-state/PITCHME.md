@@ -111,7 +111,7 @@ resetDatabase()
 @snap[north]
 ## 💡 Bonus tip
 @snapend
-@snap[south]
+@snap[south span-99]
 Skopíruj si curl z DevTools network tabu a importuj do postmana
 @snapend
 @snap[west span-33]
