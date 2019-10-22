@@ -5,11 +5,11 @@ beforeEach(function resetData () {
     todos: []
   })
 })
-beforeEach(function visitSite () {
-  cy.visit('/')
-})
 
 it('enters 10 todos', function () {
+
+  cy.visit('/')
+
   cy.get('.new-todo')
     .type('todo 0{enter}')
     .type('todo 1{enter}')

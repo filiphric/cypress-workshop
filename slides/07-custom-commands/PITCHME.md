@@ -23,7 +23,7 @@
 
 +++
 
-## TO DO
+## Todo: Napíš custom command pre vytvorenie to do
 
 Napíš custom command pre vytvorenie to do
 
@@ -37,7 +37,7 @@ cy.createTodo('todo 0')
 
 +++
 
-## Todo: write and use "createTodo"
+## Todo: Napíš custom command pre vytvorenie to do
 
 ```js
 Cypress.Commands.add('createTodo', todo => {
@@ -57,7 +57,7 @@ it('creates a todo', () => {
 
 +++
 
-## Todo: add `createTodo` to `cy` object
+## Todo: pridaj `createTodo` to `cy` object
 
 How: [https://github.com/cypress-io/cypress-example-todomvc#cypress-intellisense](https://github.com/cypress-io/cypress-example-todomvc#cypress-intellisense)
 
