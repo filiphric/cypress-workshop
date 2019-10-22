@@ -9,4 +9,7 @@ theme-code       : [ "Source Code Pro" ]
 theme-controls   : [ "#484848" ]
 theme-margins    : [ "0", "15px" ]
 
+highlight : monokai
+
 theme-override: slides/style.css
+footnote : "Filip Hric"

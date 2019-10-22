@@ -103,7 +103,7 @@ ByTestId
 +++
 
 ## DevTools selector plugin
-in Cypress browser, install css [selector helper](https://chrome.google.com/webstore/detail/css-selector-helper-for-c/gddgceinofapfodcekopkjjelkbjodin)
+v Cypress browseri si nainštaluj [css selector helper](https://chrome.google.com/webstore/detail/css-selector-helper-for-c/gddgceinofapfodcekopkjjelkbjodin)
 
 ![Best practice](/slides/03-selector-playground/img/selector-helper.png)
 
