@@ -117,7 +117,7 @@ Skopíruj si curl z DevTools network tabu a importuj do postmana
 @snap[west span-40]
 ![curl](/slides/04-reset-state/img/curl.png)
 @snapend
-@snap[midpoint span-10]
+@snap[midpoint span-20]
 @fa[arrow-right]
 @snapend
 @snap[east span-40]
