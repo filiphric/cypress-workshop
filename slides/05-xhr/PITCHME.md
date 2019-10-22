@@ -2,7 +2,7 @@
 
 ### 📚 Naučíš sa
 
-- ako sledovať nework requesty a ako ich manipulovať
+- ako sledovať nework requesty a ako ich manipulovať (spying a stubbing)
 - ako čakať na network requesty zavolané z aplikácie
 - ako testovať odpovede network requestov
 
@@ -63,7 +63,7 @@ it('starts with zero items', () => {
 
 +++
 
-### Todo
+### Todo (spying)
 
 V súbore `05-xhr/spec.js` uprav test "starts with zero items"
 
@@ -90,27 +90,24 @@ cy.wait('@todos')
 // cy.get() will run AFTER cy.wait() finishes
 cy.get('li.todo').should('have.length', 0)
 ```
-
-Read [Introduction to Cypress](https://on.cypress.io/introduction-to-cypress) "Commands Run Serially"
-
 +++
 
 ## Todo
 
-add to test "starts with zero items":
+do testu "starts with zero items":
 
-- wait for the XHR alias like before
-- its response body should be an empty array
+- pridaj wait na api call ako predtým
+- vytvor test na response body, ktorý overí, že response je prázdne pole
 
 ![Checking response body](/slides/05-xhr/img/response-body.png)
 
 +++
 
-## Stub network call
+## Manipulácia API volaní (stubbing)
 
-Update test "starts with zero items (stubbed response)"
+Uprav test "starts with zero items (stubbed response)"
 
-- instead of just spying on XHR call, let's return some mock data
+- okrem odsledovania API volania, skús navyše zmeniť odpoveď api callu
 
 ```javascript
 // returns an empty list
@@ -132,7 +129,7 @@ it('starts with zero items (fixture)', () => {
   cy.get('li.todo').should('have.length', 0)
 })
 ```
-**tip:** use [`cy.fixture`](https://on.cypress.io/fixture) command
+**tip:** použi [`cy.fixture`](https://on.cypress.io/fixture) command
 
 +++
 
@@ -149,9 +146,9 @@ it('loads several items from a fixture', () => {
 
 +++
 
-### Spying on adding an item XHR
+### Sledovanie API volania pri akcii aplikácie
 
-When you add an item through the DOM, the app makes `POST` XHR call.
+Keď pridáš položku v todo liste, urobí sa api volanie metódou `POST` 
 
 ![Post new item](/slides/05-xhr/img/post-item.png)
 
@@ -162,7 +159,7 @@ It is important to be able to use DevTools network tab to inspect the XHR and it
 
 **Todo 1/2**
 
-- write a test "posts new item to the server" that confirms that new item is posted to the server
+- uprav test "posts new item to the server" pomocou ktorého overíš, že sa pri vytvorení novej položky na server odoslal request
 
 ![Post new item](/slides/05-xhr/img/post-item.png)
 
@@ -173,7 +170,7 @@ see instructions in the `05-xhr/spec.js` for the test
 
 **Todo 2/2**
 
-- write a test "posts new item to the server response" that confirms that RESPONSE when a new item is posted to the server
+- uprav test "posts new item to the server response" pomocou ktorého overíš, že sa pri vytvorení novej položky vrátila správna odpoveď zo servra
 
 ![Post new item response](/slides/05-xhr/img/post-item-response.png)
 
@@ -182,15 +179,9 @@ see instructions in the `05-xhr/spec.js` for the test
 
 +++
 
-## Bonus
+## Otestovanie loadingu
 
-Network requests guide at [https://on.cypress.io/network-requests](https://on.cypress.io/network-requests). Question: which requests do you spy on, which do you stub?
-
-+++
-
-## Testing Loading state
-
-In the application we are showing (very quickly) "Loading" state
+V aplikácii sa na krátky moment objaví "Loading" state
 
 ```html
 <div class="loading" v-show="loading">Loading data ...</div>
@@ -200,8 +191,9 @@ In the application we are showing (very quickly) "Loading" state
 
 ## Todo
 
-- delay the loading XHR request
-- assert the UI is showing "Loading" element
-- assert the "Loading" element goes away after XHR completes
+- vytvor delay pre loadovanie API requestov (pozri dokumentáciu`cy.server`)
+- použi request stubbing
+- vytvor test pre zobrazenie "Loading" elementu
+- v teste over, že "Loading" element zmizne po tom, ako request vráti odpoveď
 
 ⌨️ test "shows loading element"
