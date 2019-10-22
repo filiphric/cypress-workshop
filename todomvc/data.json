@@ -1,3 +1,24 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "title": "first item",
+      "completed": false,
+      "id": "9368373205"
+    },
+    {
+      "title": "second item",
+      "completed": false,
+      "id": "2978561296"
+    },
+    {
+      "title": "first item",
+      "completed": false,
+      "id": "8137180883"
+    },
+    {
+      "title": "second item",
+      "completed": false,
+      "id": "3097580686"
+    }
+  ]
 }

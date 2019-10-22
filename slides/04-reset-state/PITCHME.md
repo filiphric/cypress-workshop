@@ -51,7 +51,23 @@ eventkód: #zero2hero
 
 ### Zresetovanie DB cez súbor
 `todomvc/data.json`
-![image](/slides/04-reset-state/img/data.png)
+```js
+{
+  "todos": [
+    {
+      "title": "first item",
+      "completed": false,
+      "id": "9368373205"
+    },
+    {
+      "title": "second item",
+      "completed": false,
+      "id": "2978561296"
+    }
+  ]
+}
+```
+
 
 +++
 
@@ -60,7 +76,24 @@ eventkód: #zero2hero
 `todomvc/reset-db.js`
 `npm run reset`
 
-![Reset](/slides/04-reset-state/img/reset.png)
+```js
+const write = require('fs').writeFileSync
+
+const resetDatabase = () => {
+  // for complex resets can use NPM script command
+  // cy.exec('npm run reset:database')
+
+  // for simple cases, can just overwrite the data file
+  const data = {
+    todos: []
+  }
+  const str = JSON.stringify(data, null, 2) + '\n'
+  write('./data.json', str)
+}
+
+resetDatabase()
+
+```
 
 +++
 
