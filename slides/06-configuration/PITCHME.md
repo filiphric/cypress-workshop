@@ -2,42 +2,39 @@
 
 ### 📚 Naučíš sa
 
-- how to control Cypress parameters
-- how to pass environment variables to tests
+- ako nastavovať parametre Cypressu
+- ako nastaviť enviromentálne premenné
 
 +++
 
-## Configuration settings
+## Konfigurácia (Cypress.config)
 
 - `baseUrl`
 - `env`
 - `reporter`
 - `video`
-- and many, many more
+- a oveľa viac
 
 +++
 
-Cypress options can be set via:
+Cypress konfigurácia sa dá nastaviť pomocou
 - `cypress.json`
-- command line arguments
-- environment variables
-- in plugin code
-- at run-time
+- command line argumentov
+- environment premenných
+- cez plugin
+- pri spustení Cypressu
 
 +++
 
-## Question
+## Otázka
 
-> Where is the configuration documentation?
-
-Note:
-You should find docs at [https://on.cypress.io/configuration](https://on.cypress.io/configuration)
+> Kde je uložená konfigurácia?
 
 +++
 
 ## `cypress.json`
 
-Open `cypress.json` and check which options are set in this project.
+Otvor `cypress.json` a pozri, aké nastavenia sú na projekte
 
 ```json
 {
@@ -54,13 +51,13 @@ Open `cypress.json` and check which options are set in this project.
 
 ![`cypress.json` IntelliSense in VSCode](/slides/10-configuration/img/cypress.json-intellisense.png)
 
-You can have IntelliSense in `cypress.json` in a modern editor, like VSCode.
+V moderných editoroch, ako je VS Code, je možné pre `cypress.json` nastaviť intellisense
 
 +++
 
 ## VSCode
 
-In the user settings, global or workspace set
+V user, global, alebo workspace settings si nastav:
 
 ```json
 {
@@ -73,13 +70,13 @@ In the user settings, global or workspace set
 }
 ```
 
-Read: [https://glebbahmutov.com/blog/json-schema-for-the-win/](https://glebbahmutov.com/blog/json-schema-for-the-win/)
+Prečítaj si: [https://glebbahmutov.com/blog/json-schema-for-the-win/](https://glebbahmutov.com/blog/json-schema-for-the-win/)
 
 +++
 
-## VSCode (alternative)
+## VSCode (alternatíva)
 
-Add `$schema` property to `cypress.json`
+pridaj `$schema` property do `cypress.json`
 
 ```json
 {
@@ -95,13 +92,13 @@ Read: [https://glebbahmutov.com/blog/json-schema-for-the-win/](https://glebbahmu
 
 +++
 
-## command line arguments
+## command line argumenty
 
-You can override default and `cypress.json` settings using `--config` flag
+`cypress.json` je možné prepísať cez `--config` flag
 
 ```shell
 npx cypress open \
-  --config baseUrl=http://todomvc.com/examples/dojo/,defaultCommandTimeout=10000
+  --config defaultCommandTimeout=10000
 ```
 
 Note:
@@ -110,9 +107,9 @@ Commonly used with `cypress run` command (specific spec, longer timeouts)
 
 +++
 
-## package scripts
+## npm package scripty
 
-**Warning ⚠️** if you start Cypress via NPM package scripts, use `--` to add CLI arguments.
+**Pozor ⚠️** ak spúšťaš Cypress cez NPM package script, treba použiť `--` na pridanie ďalších argumentov
 
 ```json
 {
@@ -124,14 +121,14 @@ Commonly used with `cypress run` command (specific spec, longer timeouts)
 ```
 
 ```shell
-npm run cy:run -- --config baseUrl=http://todomvc.com/examples/dojo/
+npm run cy:run -- --config defaultCommandTimeout=10000
 ```
 
 +++
 
-## environment variables
+## CYPRESS_ premenné
 
-You can override `cypress.json` settings using environment variables that start with `CYPRESS_`
+`cypress.json` je možné prepísať pomocou premenných, ktoré začínajú `CYPRESS_`
 
 ```shell
 CYPRESS_baseUrl=http://todomvc.com/examples/dojo/ npx cypress open
@@ -144,23 +141,9 @@ Note:
 
 +++
 
-## environment variables
+## plugin
 
-Use environment variables on CI. Especially to pass the private record key!
-
-```shell
-# bad practice, can accidentally show up in STDOUT
-npx cypress run --record --recordKey abc...
-# good
-CYPRESS_RECORD_KEY=abc...
-npx cypress run --record
-```
-
-+++
-
-## plugin code
-
-In `cypress/plugins/index.js`
+v súbore `cypress/plugins/index.js`
 
 ```js
 module.exports = (on, config) => {
@@ -174,24 +157,9 @@ Docs: [https://on.cypress.io/configuration-api](https://on.cypress.io/configurat
 
 +++
 
-## plugin code
+## Konfigurácia počas testu
 
-You can return a resolved config as a promise.
-
-```js
-module.exports = (on, config) => {
-  return new Promise((resolve, reject) => {
-    // load config from file or network
-    resolve(loadedConfig)
-  })
-}
-```
-
-+++
-
-## Run-time configuration
-
-You can change current setting _per spec_ using [Cypress.config](https://on.cypress.io/config) call.
+Je moůzné meniť konfiguráciu na úrovni testu pomocou [Cypress.config](https://on.cypress.io/config) príkazu.
 
 ```js
 Cypress.config('baseUrl', 'http://todomvc.com/examples/dojo/')
@@ -202,39 +170,31 @@ beforeEach(function visitSite () {
 ```
 
 Note:
-Use at your own risk, because the order of mutations and the final config in each test can be confusing.
+Pozor na kombináciu rôznych prístupov, pretože rôzne poradie a mutácie vedia v testoch vyrobiť zmätok
 
 +++
 
-## Resolved configuration
+## Konečná konfigurácia
 
 ![resolved configuration](/slides/10-configuration/img/configuration.png)
 
 +++
 
-## Configuration precedence
+## Poradie konfigurácie
 
 `cypress.json` < environment variable < CLI parameter < plugin < run-time
 
 +++
 
-## Todo
+## Environmentálne premenné
 
-Run a single spec in headless mode against:
-- `localhost`
-- `http://todomvc.com/examples/dojo/`
+*Tie, ktoré nie sú súčasťou Cypress konfigurácie* - username, heslo, atď.
 
-+++
-
-## Environment variables
-
-*That are not Cypress configuration* - username, passwords, etc.
-
-Guide [https://on.cypress.io/environment-variables](https://on.cypress.io/environment-variables)
+Docs: [https://on.cypress.io/environment-variables](https://on.cypress.io/environment-variables)
 
 +++
 
-## Environment variables
+## Environmentálne premenné
 
 ### `cypress.json` "env"
 
@@ -246,6 +206,11 @@ Guide [https://on.cypress.io/environment-variables](https://on.cypress.io/enviro
   }
 }
 ```
++++
+
+## Environmentálne premenné
+
+Premenné je možné použiť v teste:
 ```js
 it('has env item', function () {
   expect(Cypress.env('todoTitle'))
@@ -255,7 +220,14 @@ it('has env item', function () {
 
 +++
 
-## Environment variables
+## Environmentálne premenné
+
+Premenné sú dostupné v browseri
+![cypressEnv](/slides/06-configuration/img/cypressEnv.png)
+
++++
+
+## Environmentálne premenné
 
 ### `cypress.env.json`
 
@@ -266,46 +238,25 @@ it('has env item', function () {
 }
 ```
 
-Environment variables will be merged.
-
 +++
 
-## Using env variables
+## Použitie environmentálnych premenných
 
 ```js
-Cypress.env() // returns entire merged object
-Cypress.env(name) // returns single value
+Cypress.env() // vráti celý objekt
+Cypress.env(name) // vráti jednu hodnotu
 ```
 
 See [https://on.cypress.io/env](https://on.cypress.io/env)
 
 +++
 
-## Todo: get deep property
+## Environmentálne premenné
 
-Given `cypress.env.json`
-
-```json
-{
-  "person": {
-    "name": "Joe"
-  }
-}
-```
-
-Assert from the test that name is indeed `Joe`.
-
-Note:
-Use `Cypress._.get` or `cy.wrap(Cypress.env()).its('person.name')`
-
-+++
-
-## Environment variables
-
-### command-line arguments
+### command-line argumenty
 
 ```sh
-npx cypress open --env todoTitle="env todo",life=42
+npx cypress open --env todoTitle="env todo"
 ```
 
 +++
@@ -316,7 +267,7 @@ npx cypress open --env todoTitle="env todo",life=42
 
 ## Todo
 
-Pass an object via command-line argument and see it in the configuration
+Pošli do env premenných argument a odsleduj si ho v GUI
 
 ```sh
 npx cypress open --env ???
@@ -324,16 +275,15 @@ npx cypress open --env ???
 
 +++
 
-## Environment variables
+## Environmentálne premenné
 
-### environment variables 🙂
 
 ```sh
 CYPRESS_todoTitle="env todo" CYPRESS_name=CyBot \
   npx cypress open
 ```
 
-Unknown `CYPRESS_` variables will be added to `env` object.
+Neznáme `CYPRESS_` premenné budú pridané do  `env` objektu (tie, ktoré nie sú v config)
 
 +++
 
@@ -341,7 +291,7 @@ Unknown `CYPRESS_` variables will be added to `env` object.
 
 +++
 
-## Environment variables
+## Environmentálne premenné
 
 ### plugin
 
@@ -354,15 +304,15 @@ module.exports = (on, config) => {
 
 +++
 
-## Environment variables
+## Environmentálne premenné
 
-### run-time
+### počas testu
 
 ```js
 it('has env', () => {
   Cypress.env('life', 1)
   expect(Cypress.env('life')).to.equal(1)
-  // change multiple values
+  // zmena viacerých hodnôt
   Cypress.env({
     life: 1,
     state: 'busy'
@@ -372,9 +322,9 @@ it('has env', () => {
 
 +++
 
-## Environment variables
+## Environmentálne premenné
 
-🛑 Cannot change env variables at run-time using `Cypress.config('env', ...)`
+🛑 Počas testu nie je možné meniť premenné pomocou `Cypress.config('env', ...)`
 
 ```js
 it('has env', () => {
@@ -382,34 +332,16 @@ it('has env', () => {
   Cypress.config('env', {
     life: 1
   })
-  // nope, remains the same
+  // nefunguje
   expect(Cypress.env('life')).to.equal(42)
 })
 ```
 
-✅ Always use `Cypress.env(name, value)` to change.
+✅ Vždy používaj `Cypress.env(name, value)` na zmenu premenných
 
 +++
 
-## Todo: per-environment config
-
-Problem: let's create config settings per environment and load them using CLI argument.
-
-```sh
-npx cypress open --env staging
-npx cypress open --env prod
-```
-
-Should load options from `configs/staging.json` or from `configs/prod.json`.
-
-Note:
-What options would you set in each JSON file?
-Would they be merged with other settings in `cypress.json`?
-Answer at https://on.cypress.io/configuration-api
-
-+++
-
-## Summary
+## Zhrnutie
 
 | `config` | `env` |
 | -------- | ----- |

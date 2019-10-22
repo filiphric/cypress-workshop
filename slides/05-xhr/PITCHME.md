@@ -221,3 +221,7 @@ it.only('shows loading element', () => {
   })
 })
 ```
++++
+
+## Otázka v Slido
+eventkód: #zero2hero
