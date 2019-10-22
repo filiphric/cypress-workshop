@@ -22,53 +22,96 @@
 
 +++
 
-Open "Selector Playground"
+Otvor "Selector Playground"
 
 ![Selector playground button](/slides/03-selector-playground/img/selector-button.png)
 
 +++
 
-Selector playground can suggest much better selectors.
+Selector playground nám vie poskytnúť omnoho lepšie selectory
 
 ![Selector playground](/slides/03-selector-playground/img/selector-playground.png)
 
 +++
 
-⚠️ It can suggest a weird selector
+⚠️ Ale môže posktynúť aj veľmi zvláštne možnosti
 
 ![Default suggestion](/slides/03-selector-playground/img/default-suggestion.png)
 
 +++
 
-Read [best-practices.html#Selecting-Elements](https://docs.cypress.io/guides/references/best-practices.html#Selecting-Elements)
+Prečítaj si o [best practices](https://docs.cypress.io/guides/references/best-practices.html#Selecting-Elements)
 
 ![Best practice](/slides/03-selector-playground/img/best-practice.png)
 
 +++
 
-## Todo
-
-- add test data ids to `todomvc/index.html` DOM markup
-- use new selectors to write `cypress/integration/03-selector-playground/spec.js`
-
-Note:
-The updated test should look something like the next image
+## Ako udržať testy odolné voči zmenám?
+![Best practice](/slides/03-selector-playground/img/kent.png)
 
 +++
 
-![Selectors](/slides/03-selector-playground/img/selectors.png)
-
-+++
-
-## Cypress is just JavaScript
-
-```js
-import {selectors, tid} from './common-selectors'
-it('finds element', () => {
-  cy.get(selectors.todoInput).type('something{enter}')
-
-  // "tid" forms "data-test-id" attribute selector
-  // like "[data-test-id='item']"
-  cy.get(tid('item')).should('have.length', 1)
-})
+## Cypress testing library
+```shell
+npm install --save-dev cypress @testing-library/cypress
 ```
+do foldra `cypress/support/commands.js` pridaj import
+```js
+import '@testing-library/cypress/add-commands'
+```
+na začiatok filu pridaj
+```js
+/// <reference types="@types/testing-library__cypress" />
+```
++++
+@snap[west]
+#### Varianty
+```js
+getBy
+getAllBy
+queryBy
+queryAllBy
+findBy
+findllBy
+``` 
+@snapend
+@snap[east]
+#### Query
+```js
+ByLabelText
+ByPlaceholderText
+ByText
+ByAltText
+ByTitle
+ByDisplayValue
+ByRoles
+ByTestId
+``` 
+@snapend
+
++++
+
+## TODO
+- použi selector playground
+  - označ nadpis
+  - označ input field
+- použi testing library
+  - findByText
+  - findByPlaceholderText
+  - findByTestId
+
++++
+
+## DevTools selector plugin
+@snap[west]
+#### Varianty
+
+![Best practice](/slides/03-selector-playground/img/selector-helper.png)
+
+@snapend
+
+@snap[east]
+#### Query
+
+in Cypress browser, install css [selector helper](https://chrome.google.com/webstore/detail/css-selector-helper-for-c/gddgceinofapfodcekopkjjelkbjodin)
+@snapend

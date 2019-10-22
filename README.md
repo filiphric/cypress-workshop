@@ -1,12 +1,13 @@
-> A full day testing workshop complete with application, exercise tests and speaker slides for [Cypress.io](https://www.cypress.io/)
+> Vitajte na [Cypress.io](https://www.cypress.io/) workshope!
 
-## Requirements ⚙️
+## Technické požiadavky: ⚙️
 
-- Any computer: Mac, Windows, Linux
+- Akýkoľvek počítač: Mac, Windows, Linux
 - [Node 6+](https://nodejs.org/)
 - [git](https://git-scm.com)
 
-In order to get the code and install dependencies
+## Príprava:  
+Stiahni si kód a nainštaluj si dependencie
 
 ```bash
 git clone git@github.com:filiphric/cypress-workshop.git
@@ -14,23 +15,23 @@ cd cypress-workshop
 npm install
 ```
 
-If necessary, install dependencies inside TodoMVC folder
+Ak je to potrebné nainštaluj dependencie vo vnútri TodoMVC foldra
 
 ```bash
 cd todomvc
 npm install
 ```
 
-### Quick check ✅
+### Kontrola ✅
 
-You can test the installation by starting TodoMVC in the first terminal window
+Skontroluj si či všetko funguje zadaním nasledovných príkazov do terminálu:
 
 ```shell
 cd todomvc
 npm start
 ```
 
-and you should see in the terminal
+v termináli by sa mala objaviť hláška:
 
 ```text
 > json-server --static . data.json --middlewares ./node_modules/json-server-reset
@@ -49,9 +50,9 @@ and you should see in the terminal
   http://localhost:3000
 ```
 
-Note for Windows users: if `npm start` throws an error, it is probably due to `cd todomvc; ...` first command in the `npm start `script. In this case change the working folder to "todomvc" and run `npm start` from there.
+Poznámka pre používateľov systému Windows: ak `npm start` vyhodí chybu, je to pradepodobne kvôli prvému príkazu v tomto skripte. Ak vidíš túto chybu, presuň sa prosím do foldra "todomvc" (príkazom `cd todomvc`) a zadaj príkaz `npm start` odtiaľ.
 
-From the second terminal window you should be able to open Cypress with
+Otvor si druhé kono terminálu a otvor si Cypress pomocou nasledovného príkazu:
 
 ```bash
 $ npm run cy:open
@@ -60,7 +61,7 @@ $ npm run cy:open
 > cypress open
 ```
 
-## Application 💾
+<!-- ## Application 💾
 
 [Vue.js](https://vuejs.org/) + [Vuex](https://vuex.vuejs.org/) + REST server application that we are going to test is in the folder `todomvc`. This application and its full testing is described in [this blog post](https://www.cypress.io/blog/2017/11/28/testing-vue-web-application-with-vuex-data-store-and-rest-backend/). The application should run fine without network access.
 
@@ -130,4 +131,4 @@ Every time a new Todo is saved or deleted, it changes file `todomvc/data.json`. 
 
 - https://www.cypress.io/
 - https://docs.cypress.io/
-- https://docs.cypress.io/api/api/table-of-contents.html
+- https://docs.cypress.io/api/api/table-of-contents.html -->
