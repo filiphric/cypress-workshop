@@ -2,7 +2,7 @@
 
 ### 📚 Naučíš sa
 
-- ako nastavovať parametre Cypressu
+- ako konfigurovať parametre Cypressu
 - ako nastaviť enviromentálne premenné
 
 +++
@@ -76,7 +76,7 @@ Prečítaj si: [https://glebbahmutov.com/blog/json-schema-for-the-win/](https://
 
 ## VSCode (alternatíva)
 
-pridaj `$schema` property do `cypress.json`
+alebo si pridaj `$schema` property do `cypress.json`
 
 ```json
 {
@@ -223,6 +223,7 @@ it('has env item', function () {
 ## Environmentálne premenné
 
 Premenné sú dostupné v browseri
+
 ![cypressEnv](/slides/06-configuration/img/cypressEnv.png)
 
 +++
