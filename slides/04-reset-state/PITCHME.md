@@ -51,7 +51,7 @@ eventkód: #zero2hero
 
 
 
-@snap[midpoint span-50]
+@snap[midpoint span-33]
 ## Zresetovanie DB cez súbor
 `todomvc/data.json`
 ![image](/slides/04-reset-state/img/data.png)
