@@ -53,7 +53,7 @@ eventkód: #zero2hero
 
 `todomvc/data.json`
 
-@css[half-image](/slides/04-reset-state/img/data.png)
+@css[half-image]![image](/slides/04-reset-state/img/data.png)
 
 +++
 
