@@ -114,10 +114,10 @@ resetDatabase()
 @snap[south span-99]
 Skopíruj si curl z DevTools network tabu a importuj do postmana
 @snapend
-@snap[west span-45]
+@snap[west span-40]
 ![curl](/slides/04-reset-state/img/curl.png)
 @snapend
-@snap[east span-45]
+@snap[east span-40]
 ![curl](/slides/04-reset-state/img/import.png)
 @snapend
 
