@@ -1,11 +1,9 @@
-## ☀️ Part 12: Custom commands
+## 💻 Custom commandy
 
-### 📚 You will learn
+### 📚 naučíš sa
 
 - ako vytvoriť vlastný `cy` command
-- supporting retry-ability
-- TypeScript definition for new command
-- useful 3rd party commands
+- ako vytvoriť TypeScript definíciu pre nový command
 
 +++
 
