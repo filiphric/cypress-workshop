@@ -53,9 +53,9 @@ eventkód: #zero2hero
 
 `todomvc/data.json`
 
-@css[half-image]
+@snap[midpoint span-50]
 ![image](/slides/04-reset-state/img/data.png)
-@cssend
+@snapend
 
 +++
 
