@@ -9,7 +9,7 @@
 
 - maj aplikáciu `todomvc` stále zapnutú
 - otvor si `cypress/integration/04-reset-state/spec.js`
-- čo sa stane ak sa spustíš test znova?
+- čo sa stane ak sa spustíš test viackrát?
 
 +++
 
@@ -20,6 +20,8 @@
 ![Second test run](/slides/04-reset-state/img/failing-test.png)
 
 +++
+
+## Pozri DevTools
 
 ![Inspect first XHR call](/slides/04-reset-state/img/inspect-first-get-todos.png)
 
@@ -43,7 +45,7 @@ it.only('adds two items', () => {
 
 ## Otázky v Slido
 
-eventkód: zero2hero
+eventkód: #zero2hero
 
 +++
 
@@ -51,7 +53,7 @@ eventkód: zero2hero
 
 `todomvc/data.json`
 
-![data](/slides/04-reset-state/img/data.png)
+---?image=/slides/04-reset-state/img/data.png&size=auto 90%
 
 +++
 
