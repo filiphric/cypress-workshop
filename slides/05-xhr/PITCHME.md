@@ -1,23 +1,22 @@
-## ☀️ Part 5: Control network calls
+## 💻 Pracujeme s networkom
 
-### 📚 You will learn
+### 📚 Naučíš sa
 
-- how to spy / stub network calls
-- how to wait for the network calls from tests
-- how to use network calls in assertions
-
-+++
-
-- keep `todomvc` app running
-- open `cypress/integration/05-xhr/spec.js`
-- **note** stubbing `window.fetch` is NOT implemented yet, but will be [issue #687](https://github.com/cypress-io/cypress/issues/687)
+- ako sledovať nework requesty a ako ich manipulovať
+- ako čakať na network requesty zavolané z aplikácie
+- ako testovať odpovede network requestov
 
 +++
 
-## Situation
+- maj aplikáciu `todomvc` zapnutú
+- otvor `cypress/integration/05-xhr/spec.js` a pridaj spusti prvý test `(it.only)`
 
-- there is **no resetting** the state before each test
-- the test passes but _something is wrong_
++++
+
+## Situácia
+
+- v teste **nie je resetovanie** stavu pred každým testom
+- test nám napriek tomu prešiel
 
 ```javascript
 it('starts with zero items', () => {
@@ -30,23 +29,23 @@ it('starts with zero items', () => {
 
 +++
 
-## Problem
+## Popis problému
 
 @ul
 
-- page loads
-- web application makes XHR call `GET /todos`
-  - meanwhile it shows an empty list of todos
-- Cypress assertion passes!
-- `GET /todos` returns with 2 items
-  - they are added to the DOM
-  - but the test has already finished
+- stránka sa načíta
+- aplikácia urobí API volanie na `GET /todos`
+  - medzičasom zobrazuje prázdny zoznam
+- Cypress test prejde!
+- `GET /todos` vráti dve položky
+  - vykreslia sa v aplikácii
+  - ale test medzičasom skončil
 
 @ulend
 
 +++
 
-## Waiting
+## cy.wait
 
 ```javascript
 it('starts with zero items', () => {
@@ -60,30 +59,28 @@ it('starts with zero items', () => {
 
 +++
 
-**better** to wait on a specific XHR request. Network is just observable public effect, just like DOM.
+**lepší spôsob** je však počkať si na odpoveď špecifického API volania. Network requesty je možné vidieť v browseri, rovnako ako DOM.
 
 +++
 
 ### Todo
 
-In `05-xhr/spec.js` test "starts with zero items"
+V súbore `05-xhr/spec.js` uprav test "starts with zero items"
 
 @ul
 
-- start Cypress mock server with `cy.server`
-  - should we start mock server _before_ or _after_ `cy.visit`?
-- spy on specific route with `cy.route`
-- save as an alias
-- wait for this XHR alias
-  - then check the DOM
+- zapni Cypress mock server pomocou commandu `cy.server`
+  - zisti, či je potrebné dať tento command _pred_ alebp _za_ `cy.visit`?
+- použi `cy.route` pre odchytenie requestu
+- ulož si request ako alias
+- počkaj si na request pomocou aliasu 
+  - potom skontroluj aplikáciu
 
 @ulend
 
-**tips:** [`cy.server`](https://on.cypress.io/server), [`cy.route`]('https://on.cypress.io/route), [Network requests guide](https://on.cypress.io/network-requests)
+**tipy:** [`cy.server`](https://on.cypress.io/server), [`cy.route`]('https://on.cypress.io/route), [Network requests guide](https://on.cypress.io/network-requests)
 
 +++
-
-💡 No need to `cy.wait(...).then(...)`. All Cypress commands will be chained automatically.
 
 ```js
 cy.server()

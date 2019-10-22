@@ -1,4 +1,4 @@
-## ☀️ Resetovanie stavu
+## 💻 Resetovanie stavu
 
 ### 📚 Naučíš sa
 
