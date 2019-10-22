@@ -191,9 +191,33 @@ V aplikácii sa na krátky moment objaví "Loading" state
 
 ## Todo
 
-- vytvor delay pre loadovanie API requestov (pozri dokumentáciu`cy.server`)
+- vytvor delay pre loadovanie API requestov (pozri dokumentáciu `cy.server`)
 - použi request stubbing
 - vytvor test pre zobrazenie "Loading" elementu
 - v teste over, že "Loading" element zmizne po tom, ako request vráti odpoveď
 
 ⌨️ test "shows loading element"
++++
+
+## Bonus
+
+Odsledovaný request si vieš uložiť do Cypress.env() a neskôr ho v teste použiť
+
+```js
+it.only('shows loading element', () => {
+
+  const text = 'hello';
+
+  Cypress.env('todos', [])
+
+  cy.server()
+  cy.route('POST', '/todos').as('createToDo')
+  cy.visit('/')
+  cy.get('.new-todo').type(`${text}{enter}`)
+  cy.wait('@createToDo').then( todo => {
+    Cypress.env('todos').push(todo.response.body)
+    cy.findByText(text).should('be.visible');
+    cy.request('DELETE', `/todos/${Cypress.env('todos')[0]['id']}`)
+  })
+})
+```

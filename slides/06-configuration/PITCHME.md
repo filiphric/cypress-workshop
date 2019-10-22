@@ -1,6 +1,6 @@
-## ☀️ Part 10: Configuration
+## 💻 Konfigurácia
 
-### 📚 You will learn
+### 📚 Naučíš sa
 
 - how to control Cypress parameters
 - how to pass environment variables to tests
