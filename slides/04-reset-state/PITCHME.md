@@ -49,12 +49,14 @@ eventkód: #zero2hero
 
 +++
 
-@snap[midpoint span-40]
 
 ### Zresetovanie DB cez súbor
+@snap[west]
 `todomvc/data.json`
-![image](/slides/04-reset-state/img/data.png)
+@snapend
 
+@snap[east]
+![image](/slides/04-reset-state/img/data.png)
 @snapend
 
 +++
