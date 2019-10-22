@@ -92,7 +92,6 @@ const resetDatabase = () => {
 }
 
 resetDatabase()
-
 ```
 
 +++
@@ -111,10 +110,10 @@ resetDatabase()
 
 ## 💡 Bonus tip
 Skopíruj si curl z DevTools network tabu a importuj do postmana
-@snap[west]
+@snap[west span-33]
 ![curl](/slides/04-reset-state/img/curl.png)
 @snapend
-@snap[east]
+@snap[east span-33]
 ![curl](/slides/04-reset-state/img/import.png)
 @snapend
 
