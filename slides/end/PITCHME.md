@@ -29,4 +29,4 @@
 +++
 
 ## Tričko za feedback 👕
-daj mi prosím feedback na workshop : [(https://link.cypress.io/filip)](https://link.cypress.io/filip)
+daj mi prosím feedback na workshop : [https://link.cypress.io/filip](https://link.cypress.io/filip)
