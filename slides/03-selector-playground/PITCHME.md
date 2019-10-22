@@ -99,7 +99,7 @@ ByTestId
   - findByText
   - findByPlaceholderText
   - findByTestId
-  - ByLabelText
+  - findByLabelText
 
 +++
 

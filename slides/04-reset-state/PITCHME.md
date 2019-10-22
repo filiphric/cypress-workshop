@@ -1,15 +1,15 @@
-## ☀️ Part 4: Reset state data
+## ☀️ Resetovanie stavu
 
-### 📚 You will learn
+### 📚 Naučíš sa
 
-- how one test can affect another test by leaving its data behind
-- when and how to reset state during testing
+- ako môže vznikať konflikt medzi testami
+- ako to vyriešiť resetovaním stavu medzi testami
 
 +++
 
-- keep `todomvc` app running
-- open `cypress/integration/04-reset-state/spec.js`
-- if you reload the test it starts failing 😕
+- maj aplikáciu `todomvc` stále zapnutú
+- otvor si `cypress/integration/04-reset-state/spec.js`
+- čo sa stane ak sa spustíš test znova?
 
 +++
 
@@ -41,33 +41,54 @@ it.only('adds two items', () => {
 
 +++
 
-## Questions
+## Otázky v Slido
 
-- how to reset the database?
-  - **tip** we are using [json-server-reset](https://github.com/bahmutov/json-server-reset#readme) middleware
-  - try to reset it from command line
-
-```
-$ http POST :3000/reset todos:=[]
-```
-
-Note:
-I am using httpie to easily send the empty list to reset the database.
+eventkód: zero2hero
 
 +++
 
-- how to make an arbitrary cross-domain XHR request from Cypress?
-- reset the database before each test
-  - modify `04-reset-state/spec.js` to make XHR call to reset the database
-  - before or after `cy.visit`?
+## Zresetovanie DB cez súbor
 
-Note:
-Students should modify `cypress/integration/04-reset-state/spec.js` and make the request to reset the database before each test using `cy.request`.
+`todomvc/data.json`
+
+![data](/slides/04-reset-state/img/data.png)
+
++++
+
+## Zresetovanie DB cez súbor
+
+`todomvc/reset-db.js`
+`npm run reset`
+
+![Reset](/slides/04-reset-state/img/reset.png)
+
++++
+
+## Zresetovanie DB cez súbor
+
+⚠️Pri tomto postuje je však potrebné zresetovať aplikáciu
+
++++
+
+## Zresetovanie DB cez postmana
+
+![Postman](/slides/04-reset-state/img/postman.png)
+
++++
+
+## 💡 Bonus tip
+Skopíruj si curl z DevTools network tabu a importuj do postmana
+@snap[west]
+![curl](/slides/04-reset-state/img/curl.png)
+@snapend
+@snap[east]
+![curl](/slides/04-reset-state/img/import.png)
+@snapend
 
 +++
 
 ## Best practices
 
-- reset state before each test
-  - in our [Best practices guide](https://on.cypress.io/best-practices)
-- use [`cy.request`](https://on.cypress.io/request), [`cy.exec`](https://on.cypress.io/exec), [`cy.task`](https://on.cypress.io/task)
+- resetuj stav pred každým testom
+  - [návod pre best practices](https://on.cypress.io/best-practices)
+- použi [`cy.request`](https://on.cypress.io/request), [`cy.exec`](https://on.cypress.io/exec), [`cy.task`](https://on.cypress.io/task)
