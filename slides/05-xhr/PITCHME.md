@@ -146,11 +146,16 @@ it('loads several items from a fixture', () => {
 
 +++
 
+@snap[north]
 ### Sledovanie API volania pri akcii aplikácie
-
+@snapend
+@snap[west span-40]
 Keď pridáš položku v todo liste, urobí sa api volanie metódou `POST` 
-
+@snapend
+@snap[east span-40]
 ![Post new item](/slides/05-xhr/img/post-item.png)
+@snapend
+
 
 Note:
 It is important to be able to use DevTools network tab to inspect the XHR and its request and response.
