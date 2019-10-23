@@ -255,3 +255,4 @@ Skopíruj si curl z DevTools network tabu a importuj do postmana
 
 ## Otázka v Slido
 eventkód: #zero2hero
+Note: O ktorej téme by si sa rád dozvedel viac?

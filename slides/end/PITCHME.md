@@ -1,3 +1,9 @@
+## Ako hodnotíš workshop jedným slovom?
+
+eventkód: *#zero2hero*
+Note:
+Ako hodnotíš workshop jedným slovom?
+
 ## 🔖 Súhrn workshopu
 
 - Píš E2E testy, ktoré kopírujú správanie usera
@@ -30,3 +36,6 @@
 
 ## Tričko za feedback 👕
 daj mi prosím feedback na workshop : [https://link.cypress.io/filip](https://link.cypress.io/filip)
+
+![Post new item response](/slides/end/img/tshirt.jpeg)
+
