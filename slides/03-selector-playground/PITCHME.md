@@ -108,3 +108,11 @@ v Cypress browseri si nainštaluj [css selector helper](https://chrome.google.co
 
 ![Best practice](/slides/03-selector-playground/img/selector-helper.png)
 
++++ 
+
+## Otázky v Slido!
+
+eventkód: *#zero2hero*
+
+Note:
+Ktorý spôsob selectovania sa Ti najviac pozdáva?

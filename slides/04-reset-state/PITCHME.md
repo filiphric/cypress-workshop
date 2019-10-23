@@ -47,6 +47,9 @@ it.only('adds two items', () => {
 
 eventkód: #zero2hero
 
+Note: Ako zresetovať databázu?
+
+
 +++
 
 ### Zresetovanie DB cez súbor
@@ -98,7 +101,7 @@ resetDatabase()
 
 ## Zresetovanie DB cez súbor
 
-⚠️Pri tomto postuje je však potrebné zresetovať aplikáciu
+⚠️ Pri tomto postuje je však potrebné zresetovať aplikáciu
 
 +++
 
@@ -108,21 +111,10 @@ resetDatabase()
 
 +++
 
-@snap[north]
-## 💡 Bonus tip
-@snapend
-@snap[south span-99]
-Skopíruj si curl z DevTools network tabu a importuj do postmana
-@snapend
-@snap[west span-40]
-![curl](/slides/04-reset-state/img/curl.png)
-@snapend
-@snap[midpoint span-20]
-@fa[arrow-right]
-@snapend
-@snap[east span-40]
-![curl](/slides/04-reset-state/img/import.png)
-@snapend
+## To do
+napíš test, ktorý pri spustení testu zresetuje databázu cez request
+
+**tip:** použi [`cy.request`](https://on.cypress.io/request)
 
 +++
 

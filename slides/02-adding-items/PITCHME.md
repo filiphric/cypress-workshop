@@ -21,14 +21,15 @@ O tom, ako zresetovať stav aplikácie sa pobavíme neskôr 😉.
 
 Keď chceš pustiť jeden test, použi `it.only`
 +++
-
+@snap[north]
 ## 💡 Bonus tip
+@snapend
 
-@snap[west]
+@snap[west span-40]
 ![VSCode icons](/slides/02-adding-items/img/add-only.png)
 @snapend
 
-@snap[east]
+@snap[east span-40]@snap[west span-40]
 Nainštaluj si addon „Add Only“ do vs code
 @snapend
 
@@ -188,3 +189,10 @@ describe('Feature A', () => {
   })
 })
 ```
++++ 
+
+## Otázky v Slido!
+
+eventkód: *#zero2hero*
+Note:
+Zatiaľ je workshop náročný/nenáročný

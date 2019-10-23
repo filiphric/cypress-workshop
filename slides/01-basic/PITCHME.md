@@ -27,6 +27,7 @@ it('loads', () => {
 
 Note:
 This is a good moment to show how Cypress stores DOM snapshots and shows them for each step.
+Zatiaľ test netreba opravovať
 
 +++
 
@@ -46,7 +47,7 @@ This is a good moment to show how Cypress stores DOM snapshots and shows them fo
 
 +++
 
-## Cypress má 2 príkazy
+## Cypress má 2 spôsoby spustenia
 
 - `cypress open`
 - `cypress run`
@@ -79,9 +80,10 @@ tip: `npx cypress run --help`
 
 +++
 
-## Aké testy písať? (otázka v Slido)
+## Otázka v Slido!
 
 eventkód: *#zero2hero*
 
 Note:
+Čo by ste otestovali v našej aplikácii?
 Longer tests, adding items then deleting one for example. Adding items via GUI and observing communication with the server. Adding items then reloading the page.

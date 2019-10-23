@@ -191,3 +191,6 @@ Bonus: extension [vscode-icons](https://github.com/vscode-icons/vscode-icons)
 ## Otázky v Slido!
 
 eventkód: *#zero2hero*
+Note:
+Čo sa stane keď vytvoríš novú položku?
+Najmenej rozumiem

@@ -12,41 +12,27 @@
 - zadajte kód #zero2hero
 - pýtajte sa!
 
-Note: [https://wall.sli.do/event/qihp8bzn](https://wall.sli.do/event/qihp8bzn)
+Note: 
+[https://wall.sli.do/event/qihp8bzn](https://wall.sli.do/event/qihp8bzn)
+Moje skúsenosti so Cypressom (1 star = žiadne, 10 stars = expert)
+Moje skúsenosti s NodeJS, npm, Command line (1 star = žiadne, 10 stars = expert)
+Moje skúsenosti s Chrome DevTools (1 star = žiadne, 10 stars = expert)
+Používam textový editor
 
 +++
 
-## What we are going to cover 1/3
+## Obash workshopu
 
-- example TodoMVC
-  * web app, data store, REST calls
-- basic page load test
-- selector playground
-- resetting state
-- XHR spying and stubbing, fixtures
-
-+++
-
-## What we are going to cover 2/3
-
-- CI and Cypress dashboard
-- test reporters
-- configuration and environment variables
-- retry-ability
-- debugging
-- visual testing
-
-+++
-## What we are going to cover 3/3
-
-As long as ⏳ permits
-
-- page objects vs app actions
-- fixtures and backend
-- preprocessors
-- component testing
-- plugins
-- code coverage
+- inštalácia intro, popis testovanej aplikácie
+- Vytvorenie projektu v Cypress
+- Základné príkazy
+- Pridávanie položiek v TodoMVC
+- Hráme sa so selectormi
+- Resetovanie stavu
+- Pracujeme s networkom
+- Konfigurácia
+- Custom commandy
+- Záver workshopu
 
 +++
 
@@ -91,6 +77,9 @@ Pozrime sa na aplikáciu
 
 **dôležité** majte aplikáciu zapnutú počas celého trvania workshopu
 
+Note:
+The students should open DevTools and look at XHR requests that go between the web application and the server. Also the students should find `todomvc/data.json` file with saved items.
+
 +++
 
 ![TodoMVC](/slides/intro/img/todomvc.png)
@@ -106,4 +95,3 @@ Pozrime sa na aplikáciu
 eventkód: *#zero2hero*
 
 Note:
-The students should open DevTools and look at XHR requests that go between the web application and the server. Also the students should find `todomvc/data.json` file with saved items.

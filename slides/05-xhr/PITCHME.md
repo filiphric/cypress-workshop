@@ -148,9 +148,13 @@ it('loads several items from a fixture', () => {
 
 ### Sledovanie API volania pri akcii aplikácie
 
+@snap[west]
 Keď pridáš položku v todo liste, urobí sa api volanie metódou `POST` 
+@snapend
 
+@snap[east]
 ![Post new item](/slides/05-xhr/img/post-item.png)
+@snapend
 
 Note:
 It is important to be able to use DevTools network tab to inspect the XHR and its request and response.
@@ -221,6 +225,24 @@ it.only('shows loading element', () => {
   })
 })
 ```
++++
+
+@snap[north]
+## 💡 Bonus tip
+@snapend
+@snap[south span-99]
+Skopíruj si curl z DevTools network tabu a importuj do postmana
+@snapend
+@snap[west span-40]
+![curl](/slides/04-reset-state/img/curl.png)
+@snapend
+@snap[midpoint span-20]
+@fa[arrow-right]
+@snapend
+@snap[east span-40]
+![curl](/slides/04-reset-state/img/import.png)
+@snapend
+
 +++
 
 ## Otázka v Slido
