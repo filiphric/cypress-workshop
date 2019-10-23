@@ -146,7 +146,7 @@ it('loads several items from a fixture', () => {
 
 +++
 
-@snap[north]
+@snap[north span-99]
 ### Sledovanie API volania pri akcii aplikácie
 @snapend
 @snap[west span-40]
