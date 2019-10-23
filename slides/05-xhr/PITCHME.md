@@ -164,9 +164,14 @@ It is important to be able to use DevTools network tab to inspect the XHR and it
 
 **Todo 1/2**
 
+### Sledovanie API volania pri akcii aplikácie
+@snapend
+@snap[west span-40]
 - uprav test "posts new item to the server" pomocou ktorého overíš, že sa pri vytvorení novej položky na server odoslal request
-
+@snapend
+@snap[east span-40]
 ![Post new item](/slides/05-xhr/img/post-item.png)
+@snapend
 
 Note:
 see instructions in the `05-xhr/spec.js` for the test
@@ -174,10 +179,13 @@ see instructions in the `05-xhr/spec.js` for the test
 +++
 
 **Todo 2/2**
-
+@snapend
+@snap[west span-40]
 - uprav test "posts new item to the server response" pomocou ktorého overíš, že sa pri vytvorení novej položky vrátila správna odpoveď zo servra
-
+@snapend
+@snap[east span-40]
 ![Post new item response](/slides/05-xhr/img/post-item-response.png)
+@snapend
 
 Note:
 see instructions in the `05-xhr/spec.js` for the test
