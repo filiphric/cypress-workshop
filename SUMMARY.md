@@ -4,6 +4,6 @@
 
 ## Úvod
 
-* [Príprava na workshop](uvod/priprava-na-workshop/README.md)
-  * [Skontroluj si verziu Node a Git](uvod/priprava-na-workshop/skontroluj-si-verziu-node-a-git.md)
+* [Príprava na workshop](uvod/start/README.md)
+  * [Skontroluj si verziu Node a Git](uvod/start/skontroluj-si-verziu-node-a-git.md)
 

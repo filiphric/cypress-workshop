@@ -20,7 +20,7 @@ Workshop je rozdelený do modulov, ktoré je sa dajú kombinovať a prispôsobov
 
 ## Ako workshop vediem
 
-Pred workshopom prosím účastníkov, aby si [prešli prípravou](uvod/priprava-na-workshop/). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
+Pred workshopom prosím účastníkov, aby si [prešli prípravou](uvod/start/). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
 
 Workshop je rozdelený do menších modulov. Väčšina modulov kopíruje nasledovnú štruktúru:
 
@@ -46,8 +46,8 @@ Momentálne pracujem ako QA lead v spoločnosti Slido. Vediem náš 6-členný Q
 
 Sledovať a kontaktovať ma možno
 
-* Linkedin
-* Twitter
-* filip@filiphric.sk
+* [Linkedin](https://www.linkedin.com/in/filip-hric-11a5b1126/)
+* [Twitter](https://twitter.com/filip_hric)
+* [filip@filiphric.sk](mailto:filip@filiphric.sk)
 * ale hlavne [na mojom blogu na mediume](https://medium.com/@filiphric)
 
