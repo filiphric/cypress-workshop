@@ -1,17 +1,38 @@
-# Vitaj na Cypress.io workshope!
+# Vitaj na Cypress.io workshope! 👋
+
+###  
+
+![](.gitbook/assets/filip-speaker.png)
+
+### Pár slov na úvod
+
+Som rád, že si tu 👍
+
+Volám sa Filip a dnes Ťa budem sprevádzať na našom Cypress workshope.
+
+Musím sa Ti hneď na úvod priznať, že neviem všetko. Nie som žiaden expert, som len človek čo \(sa\) rád učí. Verím, že dnes sa nebudeš učiť len Ty odomňa, ale aj ja od Teba. 
+
+Neboj sa pýtať otázky a neboj sa nevedieť. Garantujem, že ani ja všetko neviem. Na to, čo nebude vedieť nikto máme Google a stackoverflow 😉
+
+Môžeš mi tykať.
+
+## Predtým n
 
 ## Technické požiadavky: ⚙️
 
 * Akýkoľvek počítač: Mac, Windows, Linux
-* [Node 6+](https://nodejs.org/)
-* [git](https://git-scm.com)
+* Node verzia 8 alebo vyššia
+* git
+* Textový editor - odporúčam [VS Code](https://code.visualstudio.com/download), v ktorom budem počas workshopu pracovať aj ja 
+
+Ak si nie si istý/á verziou Node a Git, pomôžem Ti na tejto stránke
 
 ## Príprava:
 
 Stiahni si kód a nainštaluj si dependencie
 
 ```bash
-git clone git@github.com:filiphric/cypress-workshop.git
+git clone https://github.com/filiphric/cypress-workshop.git
 cd cypress-workshop
 npm install
 ```

@@ -1,0 +1,2 @@
+# Príprava na workshop
+
