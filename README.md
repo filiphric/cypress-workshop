@@ -1,12 +1,15 @@
+# index
+
 > Vitaj na [Cypress.io](https://www.cypress.io/) workshope!
 
 ## Technické požiadavky: ⚙️
 
-- Akýkoľvek počítač: Mac, Windows, Linux
-- [Node 6+](https://nodejs.org/)
-- [git](https://git-scm.com)
+* Akýkoľvek počítač: Mac, Windows, Linux
+* [Node 6+](https://nodejs.org/)
+* [git](https://git-scm.com)
 
-## Príprava:  
+## Príprava:
+
 Stiahni si kód a nainštaluj si dependencie
 
 ```bash
@@ -26,7 +29,7 @@ npm install
 
 Skontroluj si či všetko funguje zadaním nasledovných príkazov do terminálu:
 
-```shell
+```text
 cd todomvc
 npm start
 ```
@@ -50,7 +53,7 @@ v termináli by sa mala objaviť hláška:
   http://localhost:3000
 ```
 
-Poznámka pre používateľov systému Windows: ak `npm start` vyhodí chybu, je to pradepodobne kvôli prvému príkazu v tomto skripte. Ak vidíš túto chybu, presuň sa prosím do foldra "todomvc" (príkazom `cd todomvc`) a zadaj príkaz `npm start` odtiaľ.
+Poznámka pre používateľov systému Windows: ak `npm start` vyhodí chybu, je to pradepodobne kvôli prvému príkazu v tomto skripte. Ak vidíš túto chybu, presuň sa prosím do foldra "todomvc" \(príkazom `cd todomvc`\) a zadaj príkaz `npm start` odtiaľ.
 
 Otvor si druhé kono terminálu a otvor si Cypress pomocou nasledovného príkazu:
 
@@ -67,25 +70,24 @@ $ npm run cy:open
 
 ## Prezentácia  🖥
 
-Prezentáciu je možné si pozrieť na [https://gitpitch.com/filiphric/cypress-workshop][presentation] začína súborom [PITCHME.md](PITCHME.md), prezentovaná pomocou [GitPitch](https://gitpitch.com/). `PITCHME.md` obsahuje súbory z foldra [slides](slides). Účastnícikom workshopu sa odporúča otvoriť si [prezentáciu][presentation] a sledovať priebeh. Jednotlivé časti prezentácie je možné otvárať aj separátne kliknutím na tabuľku nižšie.
-
-[presentation]: https://gitpitch.com/filiphric/cypress-workshop
+Prezentáciu je možné si pozrieť na [https://gitpitch.com/filiphric/cypress-workshop](https://gitpitch.com/filiphric/cypress-workshop) začína súborom [PITCHME.md](PITCHME.md), prezentovaná pomocou [GitPitch](https://gitpitch.com/). `PITCHME.md` obsahuje súbory z foldra [slides](slides). Účastnícikom workshopu sa odporúča otvoriť si [prezentáciu](https://gitpitch.com/filiphric/cypress-workshop) a sledovať priebeh. Jednotlivé časti prezentácie je možné otvárať aj separátne kliknutím na tabuľku nižšie.
 
 ## Obsah 🗂
 
-|                            | topic                                  | folder                                                               | contents                                                           | slides                                                                                  |
-| -------------------------- | -------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| [🔗](#intro)               | Intro, TodoMVC application             | [todomvc](todomvc)                                                   | [intro.md](slides/intro/PITCHME.md)                                | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/intro)                  |
-| [🔗](#start)               | Vytvorenie projektu v Cypress          | [00-start](00-start)                                                 | [00-start](slides/00-start/PITCHME.md)                             | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/00-start)               |
-| [🔗](#basic)               | Základné príkazy                       | [01-basic](cypress/integration/01-basic)                             | [01-basic](slides/01-basic/PITCHME.md)                             | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/01-basic)               |
-| [🔗](#adding-items)        | Pridávanie položiek v TodoMVC          | [02-adding-items](cypress/integration/02-adding-items)               | [02-adding-items](slides/02-adding-items/PITCHME.md)               | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/02-adding-items)        |
-| [🔗](#selector-playground) | Hráme sa so selectormi                 | [03-selector-playground](cypress/integration/03-selector-playground) | [03-selector-playground](slides/03-selector-playground/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/03-selector-playground) |
-| [🔗](#reset-state)         | Resetovanie stavu                      | [04-reset-state](cypress/integration/04-reset-state)                 | [04-reset-state](slides/04-reset-state/PITCHME.md)                 | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/04-reset-state)         |
-| [🔗](#xhr)                 | Pracujeme s networkom                  | [05-xhr](cypress/integration/05-xhr)                                 | [05-xhr](slides/05-xhr/PITCHME.md)                                 | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/05-xhr)                 |
-| [🔗](#configuration)       | Konfigurácia                           | -                                                                    | [06-configuration](slides/06-configuration/PITCHME.md)             | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/06-configuration)       |
-| [🔗](#custom-commands)     | Custom commandy                        | [07-custom-commands](cypress/integration/07-custom-commands)         | [07-custom-commands](slides/07-custom-commands/PITCHME.md)         | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/07-custom-commands)     |
-| [🔗](#end)                 | Záver workshopu                        | -                                                                    | [end](slides/end/PITCHME.md)                                       | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/end)                    |
+|  | topic | folder | contents | slides |
+| :--- | :--- | :--- | :--- | :--- |
+| [🔗]() | Intro, TodoMVC application | [todomvc](todomvc) | [intro.md](slides/intro/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/intro) |
+| [🔗]() | Vytvorenie projektu v Cypress | [00-start](00-start) | [00-start](slides/00-start/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/00-start) |
+| [🔗]() | Základné príkazy | [01-basic](cypress/integration/01-basic) | [01-basic](slides/01-basic/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/01-basic) |
+| [🔗]() | Pridávanie položiek v TodoMVC | [02-adding-items](cypress/integration/02-adding-items) | [02-adding-items](slides/02-adding-items/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/02-adding-items) |
+| [🔗]() | Hráme sa so selectormi | [03-selector-playground](cypress/integration/03-selector-playground) | [03-selector-playground](slides/03-selector-playground/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/03-selector-playground) |
+| [🔗]() | Resetovanie stavu | [04-reset-state](cypress/integration/04-reset-state) | [04-reset-state](slides/04-reset-state/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/04-reset-state) |
+| [🔗]() | Pracujeme s networkom | [05-xhr](cypress/integration/05-xhr) | [05-xhr](slides/05-xhr/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/05-xhr) |
+| [🔗]() | Konfigurácia | - | [06-configuration](slides/06-configuration/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/06-configuration) |
+| [🔗]() | Custom commandy | [07-custom-commands](cypress/integration/07-custom-commands) | [07-custom-commands](slides/07-custom-commands/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/07-custom-commands) |
+| [🔗]() | Záver workshopu | - | [end](slides/end/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/end) |
 
+## Thanks
 
-## Thanks
 Thanks to Gleb Bahmutov, author of the original workshop found at [https://github.com/cypress-io/testing-workshop-cypress](https://github.com/cypress-io/testing-workshop-cypress), on which this workshop is heavily built on.
+
