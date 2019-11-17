@@ -1,8 +1,10 @@
-# Vitaj na Cypress.io workshope! 👋
+---
+description: 'autor: Filip Hric'
+---
 
-###  
+# Cypress workshop
 
-![](.gitbook/assets/filip-speaker.png)
+![To som ja &#x1F913;](.gitbook/assets/filip-speaker.png)
 
 ### Pár slov na úvod
 

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Vitaj na Cypress.io workshope! 👋](README.md)
+* [Cypress workshop](README.md)
 
 ## Úvod
 
