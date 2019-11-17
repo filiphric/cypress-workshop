@@ -1,4 +1,4 @@
 # Table of contents
 
-* [index](README.md)
+* [Vitaj na Cypress.io workshope!](README.md)
 
