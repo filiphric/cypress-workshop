@@ -6,109 +6,41 @@ description: 'autor: Filip Hric'
 
 ![To som ja &#x1F913;](.gitbook/assets/filip-speaker.png)
 
-### Pár slov na úvod
+Toto je úvodná stránka workshopu o testovaní pomocou [Cypress.io](https://www.cypress.io/). Táto stránka obsahuje všetko, čo počas workshopu slúži ako sprievodný študijný materiál. 
 
-Som rád, že si tu 👍
+## Pre koho je určený workshop 🤓
 
-Volám sa Filip a dnes Ťa budem sprevádzať na našom Cypress workshope.
+Workshop som vytváral hlavne pre testerov, ktorí majú záujem začať s automatizáciou v testovaní. V tomto ohľade považujem [Cypress.io](https://www.cypress.io/) za mimoriadne efektívny nástroj. So Cypressom je jednoduché začať, zároveň je však nástrojom, ktorí používajú aj profesionáli. 
 
-Musím sa Ti hneď na úvod priznať, že neviem všetko. Nie som žiaden expert, som len človek čo \(sa\) rád učí. Verím, že dnes sa nebudeš učiť len Ty odomňa, ale aj ja od Teba. 
+Ja sám som začal používať Cypress ešte v čase, keď som mal iba veľmi malé skúsenosti s JavaScriptom. Väčšinu toho, čo dnes ovládam, viem vďaka tomu, že som sa snažil vyriešiť nejaký problém v rámci testingu.
 
-Neboj sa pýtať otázky a neboj sa nevedieť. Garantujem, že ani ja všetko neviem. Na to, čo nebude vedieť nikto máme Google a stackoverflow 😉
+Nezáleží na tom, či má účastník/čka so Cypressom skúsenosti, alebo iba začína, potreby na workshope ladím podľa vedomostí účastníkov. Z vlastnej skúsenosti viem, že kombinácia skúsenejších a menej skúsených účastníkov býva skôr prospešná, než kontraporduktívna.
 
-Môžeš mi tykať.
+Workshop je rozdelený do modulov, ktoré je sa dajú kombinovať a prispôsobovať podľa potrieb a záujmu účastníkov.
 
-## Predtým n
+## Ako workshop vediem
 
-## Technické požiadavky: ⚙️
+Pred workshopom prosím účastníkov, aby si [prešli prípravou](uvod/priprava-na-workshop/). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
 
-* Akýkoľvek počítač: Mac, Windows, Linux
-* Node verzia 8 alebo vyššia
-* git
-* Textový editor - odporúčam [VS Code](https://code.visualstudio.com/download), v ktorom budem počas workshopu pracovať aj ja 
+Workshop je rozdelený do menších modulov. Väčšina modulov kopíruje nasledovnú štruktúru:
 
-Ak si nie si istý/á verziou Node a Git, pomôžem Ti na tejto stránke
+1. Teória
+2. Ukážka
+3. Praktické cvičenie, úloha
+4. Vyhodnotenie riešenia
+5. Spätná väzba, Q&A
 
-## Príprava:
+Na spätnú väzbu počas workshopu používam [Slido](https://www.sli.do/), pomocou ktorého ktoré kladiem otázky, pýtam si spätnú väzbu, prípadne zbieram otázky účastníkov, na ktoré odpovedám. Z mojej skúsenosti je najmä v začiatkoch workshopu ťažké „zdvihnúť ruku“ a opýtať sa nejakú otázku. Slido mi umožňuje efektívne si mapovať či účastníci rozumejú tomu, čo hovorím, alebo sa v inštrukciách strácajú.
 
-Stiahni si kód a nainštaluj si dependencie
+Viem, že neviem všetko a nesnažím sa mať na všetko odpoveď, alebo názor. Moja skúsenosť je, že na workshopoch sa obvykle sám veľa naučím. Niekedy hľadáme odpovede s účastníkmi spoločne. Veď na to máme Google a stackoverflow 🙂
 
-```bash
-git clone https://github.com/filiphric/cypress-workshop.git
-cd cypress-workshop
-npm install
-```
+S účastníkmi workshopu si tykáme.
 
-Ak je to potrebné nainštaluj dependencie vo vnútri TodoMVC foldra
+## Krátko o mne
 
-```bash
-cd todomvc
-npm install
-```
+Vyštudoval som psychológiu. Verím, že mi to pomáha vo svete technológii udržiavať fokus na človeka.
 
-### Kontrola ✅
+Zároveň som však beznádejný technofil, čo zrejme spôsobilo to, že po pár rokoch psychologického poradenstva som nakoniec zakotvil v technickom odvetví. Na pohľad je to dlhý skok, no odkedy robím testera, cítim, že mám srdce na pravom mieste. Slovami klasika: _„Ja si to užívam, ja sa cítim dobre.“_
 
-Skontroluj si či všetko funguje zadaním nasledovných príkazov do terminálu:
-
-```text
-cd todomvc
-npm start
-```
-
-v termináli by sa mala objaviť hláška:
-
-```text
-> json-server --static . data.json --middlewares ./node_modules/json-server-reset
-
-
-  \{^_^}/ hi!
-
-  Loading data.json
-  Loading ./node_modules/json-server-reset
-  Done
-
-  Resources
-  http://localhost:3000/todos
-
-  Home
-  http://localhost:3000
-```
-
-Poznámka pre používateľov systému Windows: ak `npm start` vyhodí chybu, je to pradepodobne kvôli prvému príkazu v tomto skripte. Ak vidíš túto chybu, presuň sa prosím do foldra "todomvc" \(príkazom `cd todomvc`\) a zadaj príkaz `npm start` odtiaľ.
-
-Otvor si druhé kono terminálu a otvor si Cypress pomocou nasledovného príkazu:
-
-```bash
-$ npm run cy:open
-
-> testing-workshop-cypress@1.0.0 cy:open /git/testing-workshop-cypress
-> cypress open
-```
-
-## Aplikácia 💾
-
-[Vue.js](https://vuejs.org/) + [Vuex](https://vuex.vuejs.org/) + REST server aplikácia, ktorú budeme testovať je vo foldri `todomvc`. Aplikácia je popísaná [v tomto blogu](https://www.cypress.io/blog/2017/11/28/testing-vue-web-application-with-vuex-data-store-and-rest-backend/). Aplikácia beží aj bez pripojenia na internet
-
-## Prezentácia  🖥
-
-Prezentáciu je možné si pozrieť na [https://gitpitch.com/filiphric/cypress-workshop](https://gitpitch.com/filiphric/cypress-workshop) začína súborom [PITCHME.md](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/PITCHME.md), prezentovaná pomocou [GitPitch](https://gitpitch.com/). `PITCHME.md` obsahuje súbory z foldra [slides](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/README.md). Účastnícikom workshopu sa odporúča otvoriť si [prezentáciu](https://gitpitch.com/filiphric/cypress-workshop) a sledovať priebeh. Jednotlivé časti prezentácie je možné otvárať aj separátne kliknutím na tabuľku nižšie.
-
-## Obsah 🗂
-
-|  | topic | folder | contents | slides |
-| :--- | :--- | :--- | :--- | :--- |
-| [🔗](./) | Intro, TodoMVC application | [todomvc](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/todomvc/README.md) | [intro.md](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/intro/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/intro) |
-| [🔗](./) | Vytvorenie projektu v Cypress | [00-start](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/00-start/README.md) | [00-start](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/00-start/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/00-start) |
-| [🔗](./) | Základné príkazy | [01-basic](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/01-basic/README.md) | [01-basic](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/01-basic/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/01-basic) |
-| [🔗](./) | Pridávanie položiek v TodoMVC | [02-adding-items](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/02-adding-items/README.md) | [02-adding-items](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/02-adding-items/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/02-adding-items) |
-| [🔗](./) | Hráme sa so selectormi | [03-selector-playground](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/03-selector-playground/README.md) | [03-selector-playground](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/03-selector-playground/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/03-selector-playground) |
-| [🔗](./) | Resetovanie stavu | [04-reset-state](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/04-reset-state/README.md) | [04-reset-state](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/04-reset-state/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/04-reset-state) |
-| [🔗](./) | Pracujeme s networkom | [05-xhr](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/05-xhr/README.md) | [05-xhr](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/05-xhr/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/05-xhr) |
-| [🔗](./) | Konfigurácia | - | [06-configuration](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/06-configuration/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/06-configuration) |
-| [🔗](./) | Custom commandy | [07-custom-commands](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/07-custom-commands/README.md) | [07-custom-commands](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/07-custom-commands/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/07-custom-commands) |
-| [🔗](./) | Záver workshopu | - | [end](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/end/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/end) |
-
-## Thanks
-
-Thanks to Gleb Bahmutov, author of the original workshop found at [https://github.com/cypress-io/testing-workshop-cypress](https://github.com/cypress-io/testing-workshop-cypress), on which this workshop is heavily built on.
+Momentálne pracujem ako QA lead v spoločnosti Slido. Vediem náš 6-členný QA tím a starám sa o automatizáciu. Dennodenne tvorím automatické testy v Cypresse, ktorých je už takmer 1000, a ktoré pomáhajú zaistiť releasovanie v Slido. To je aktuálne na úrovni cca 40 releasov mesačne 😅
 
