@@ -1,5 +1,9 @@
 # Skontroluj si verziu Node a Git
 
+## 
+
+[https://treehouse.github.io/installation-guides/windows/node-windows.html](https://treehouse.github.io/installation-guides/windows/node-windows.html) [https://treehouse.github.io/installation-guides/mac/node-mac.html](https://treehouse.github.io/installation-guides/mac/node-mac.html) [https://treehouse.github.io/installation-guides/linux/node-linux.html](https://treehouse.github.io/installation-guides/linux/node-linux.html)
+
 ## Getting Super Powers
 
 Becoming a super hero is a fairly straight forward process:
