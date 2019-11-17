@@ -44,3 +44,10 @@ Zároveň som však beznádejný technofil, čo zrejme spôsobilo to, že po pá
 
 Momentálne pracujem ako QA lead v spoločnosti Slido. Vediem náš 6-členný QA tím a starám sa o automatizáciu. Dennodenne tvorím automatické testy v Cypresse, ktorých je už takmer 1000, a ktoré pomáhajú zaistiť releasovanie v Slido. To je aktuálne na úrovni cca 40 releasov mesačne 😅
 
+Sledovať a kontaktovať ma možno
+
+* Linkedin
+* Twitter
+* filip@filiphric.sk
+* ale hlavne [na mojom blogu na mediume](https://medium.com/@filiphric)
+
