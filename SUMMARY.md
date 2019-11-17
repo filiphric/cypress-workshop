@@ -2,8 +2,8 @@
 
 * [Cypress workshop](README.md)
 
-## Úvod
+## Úvod <a id="start"></a>
 
-* [Príprava na workshop](uvod/start/README.md)
-  * [Skontroluj si verziu Node a Git](uvod/start/skontroluj-si-verziu-node-a-git.md)
+* [Príprava na workshop](start/start/README.md)
+  * [Skontroluj si verziu Node a Git](start/start/skontroluj-si-verziu-node-a-git.md)
 
