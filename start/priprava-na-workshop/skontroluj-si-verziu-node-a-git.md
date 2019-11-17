@@ -18,11 +18,13 @@ V ideálnom prípade by si ako odpoveď mal dostať nejakú takúto odpoveď:
 v8.11.4
 ```
 
+{% hint style="warning" %}
 Ak sa Ti namiesto tohto zobrazila chyba, pravdepodobne nemáš nainštalovaný Node. Inštalácia nie je vôbec zložitá. Stačí ak pôjdeš na stránku Node a [stiahneš si aktuálnu verziu](https://nodejs.org/en/). Pokiaľ by bola táto inštrukcia príliš zložitá, skús jeden z nasledovných návodov:
 
 * pre [**Windows**](https://treehouse.github.io/installation-guides/windows/node-windows.html)\*\*\*\*
 * pre ****[**Mac**](https://treehouse.github.io/installation-guides/mac/node-mac.html%20)\*\*\*\*
 * pre [**Linux**](https://treehouse.github.io/installation-guides/linux/node-linux.html)\*\*\*\*
+{% endhint %}
 
 ## Čo je to NPM?
 
@@ -36,7 +38,9 @@ Otvor si Terminál \(Mac, Linux\), alebo Command prompt \(Win\) a zadaj nasledov
 npm -v
 ```
 
+{% hint style="warning" %}
 Ak by si náhodou natrafil/a na chybu a už si inštaloval/a Node, pravdepodobne nevie tvoj počítač nájsť správnu cestu k npm. S trochou Googlenia zrejme nájdeš riešenie problému. Ak by si nemal/a šťastie, odporúčam preinštalovať Node podľa inštrukcii uvedených vyššie.
+{% endhint %}
 
 ## Čo je to Git?
 
@@ -50,7 +54,9 @@ Otvor si Terminál \(Mac, Linux\), alebo Command prompt \(Win\) a zadaj nasledov
 git --version
 ```
 
+{% hint style="warning" %}
 Ak by nastala chyba, vo väčšine prípadov by Ti počítač mal navrhnúť inštaláciu. Ak by sa tak nestalo, odporúčam inštaláciu [na oficiálnej stránke gitu](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+{% endhint %}
 
 ## Nič mi nefunguje!
 
