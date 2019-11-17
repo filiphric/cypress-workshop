@@ -4,6 +4,6 @@
 
 ## Úvod <a id="start"></a>
 
-* [Príprava na workshop](start/start/README.md)
-  * [Skontroluj si verziu Node a Git](start/start/skontroluj-si-verziu-node-a-git.md)
+* [Príprava na workshop](start/priprava-na-workshop/README.md)
+  * [Skontroluj si verziu Node a Git](start/priprava-na-workshop/skontroluj-si-verziu-node-a-git.md)
 

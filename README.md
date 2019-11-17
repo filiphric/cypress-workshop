@@ -20,7 +20,7 @@ Workshop je rozdelený do modulov, ktoré je sa dajú kombinovať a prispôsobov
 
 ## Ako workshop vediem
 
-Pred workshopom prosím účastníkov, aby si [prešli prípravou](start/start/). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
+Pred workshopom prosím účastníkov, aby si [prešli prípravou](start/priprava-na-workshop/). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
 
 Workshop je rozdelený do menších modulov. Väčšina modulov kopíruje nasledovnú štruktúru:
 
