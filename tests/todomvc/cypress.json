@@ -4,11 +4,7 @@
   "ignoreTestFiles": [
     "**/answer/*",
     "*answer.js",
-    "*.d.ts",
-    "**/__snapshots__/*",
-    "**/__image_snapshots__/*",
-    "**/17-component-testing/filters.js",
-    "**/17-component-testing/*.jsx"
+    "*.d.ts"
   ],
   "baseUrl": "http://localhost:3000",
   "env": {},

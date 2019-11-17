@@ -1,6 +1,4 @@
-# index
-
-> Vitaj na [Cypress.io](https://www.cypress.io/) workshope!
+# Vitaj na [Cypress.io](https://www.cypress.io/) workshope!
 
 ## Technické požiadavky: ⚙️
 

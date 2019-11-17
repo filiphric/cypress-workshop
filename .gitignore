@@ -1,12 +1,3 @@
 node_modules/
-*/cypress/videos
-*/cypress/screenshots
-cypress/videos
-cypress/screenshots
-cypress/results
-mochawesome-report/
-mochawesome.json
-cypress/logs
-dist
-.nyc_output
-coverage
+**/cypress/videos/*
+**/cypress/screenshots/*
