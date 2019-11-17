@@ -7,17 +7,32 @@
 * git
 * Textový editor - odporúčam [VS Code](https://code.visualstudio.com/download), v ktorom budem počas workshopu pracovať aj ja 
 
-Ak si nie si istý/á verziou Node a Git, pomôžem Ti na tejto stránke
+Ak si nie si istý/á verziou Node a Git, [pomôžem Ti na tejto stránke](skontroluj-si-verziu-node-a-git.md)
 
 ## Príprava:
 
-Stiahni si kód a nainštaluj si dependencie
+Naklonuj si repozitár a nainštaluj čo treba. Postačia na to tri kroky
 
 ```bash
 git clone https://github.com/filiphric/cypress-workshop.git
 cd cypress-workshop
 npm install
 ```
+
+Ak by niektorý z krokov skončil chybou, [skontroluj si prosím verziu Node a Git](skontroluj-si-verziu-node-a-git.md).
+
+## Čo je v repozitári?
+
+V repozitári sa nachádza všetko, čo budeme počas workshopu potrebovať:
+
+* aplikácia TodoMVC
+* aplikácia Realworld
+* Cypress
+* všetky potrebné moduly a skripty
+
+## Skúška správnosti
+
+
 
 Ak je to potrebné nainštaluj dependencie vo vnútri TodoMVC foldra
 
