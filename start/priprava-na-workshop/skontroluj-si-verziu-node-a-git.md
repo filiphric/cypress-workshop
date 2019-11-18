@@ -24,11 +24,13 @@ Ak sa Ti namiesto tohto zobrazila chyba, pravdepodobne nemáš nainštalovaný N
 * pre [**Windows**](https://treehouse.github.io/installation-guides/windows/node-windows.html)\*\*\*\*
 * pre ****[**Mac**](https://treehouse.github.io/installation-guides/mac/node-mac.html%20)\*\*\*\*
 * pre [**Linux**](https://treehouse.github.io/installation-guides/linux/node-linux.html)\*\*\*\*
+
+_\(návody sú angličtine\)_
 {% endhint %}
 
 ## Čo je to NPM?
 
-NPM \(Node package manager\) je súčasťou inštalácie Node. NPM je najväčšou softvérovou knižnicou na svete. Bez registrácie či prihlásenia umožňuje inštalovať softvérové balíčky. Pomocou príkazu `npm install` sa inštaluje aj Cypress.
+NPM \(Node package manager\) je súčasťou inštalácie Node. NPM je najväčšou softvérovou knižnicou na svete. Bez registrácie či prihlásenia umožňuje inštalovať softvérové balíčky. Pomocou príkazu `npm install` sa inštaluje aj Cypress \(konkrétne príkazom `npm install cypress`, nie je ho však potrebné pred workshopom spúšťať, o všetko sa postarajú skripty\).
 
 ### Skontroluj si verziu npm
 
@@ -44,7 +46,7 @@ Ak by si náhodou natrafil/a na chybu a už si inštaloval/a Node, pravdepodobne
 
 ## Čo je to Git?
 
-Git je systém na manažovanie softvérových verzií v projekte. Git zaznamenáva zmeny v súboroch a udržiava históriu týchto zmien. Dátova štruktúra týchto zmien sa nazýva repozitár. 
+Git je systém na manažovanie softvérových verzií v projekte. Git zaznamenáva zmeny v súboroch a udržiava históriu týchto zmien. Dátova štruktúra týchto zmien sa nazýva repozitár. Git budeme počas workshopu používať iba minimálne, na naklonovanie repozitára, v ktorom budeme pracovať. Ak by sa bol s inštaláciou problém, je možné ju vynechať
 
 ### Skontroluj si, či máš git:
 

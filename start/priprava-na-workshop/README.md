@@ -94,26 +94,3 @@ Tento príkaz spustí webovú aplikáciu a server. Server beží na lokalite `lo
 
 ![](../../.gitbook/assets/snimka-obrazovky-2019-11-18-o-23.48.34.png)
 
-## Prezentácia  🖥
-
-Prezentáciu je možné si pozrieť na [https://gitpitch.com/filiphric/cypress-workshop](https://gitpitch.com/filiphric/cypress-workshop) začína súborom [PITCHME.md](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/PITCHME.md), prezentovaná pomocou [GitPitch](https://gitpitch.com/). `PITCHME.md` obsahuje súbory z foldra [slides](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/README.md). Účastnícikom workshopu sa odporúča otvoriť si [prezentáciu](https://gitpitch.com/filiphric/cypress-workshop) a sledovať priebeh. Jednotlivé časti prezentácie je možné otvárať aj separátne kliknutím na tabuľku nižšie.
-
-## Obsah 🗂
-
-|  | topic | folder | contents | slides |
-| :--- | :--- | :--- | :--- | :--- |
-| [🔗](../../) | Intro, TodoMVC application | [todomvc](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/todomvc/README.md) | [intro.md](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/intro/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/intro) |
-| [🔗](../../) | Vytvorenie projektu v Cypress | [00-start](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/00-start/README.md) | [00-start](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/00-start/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/00-start) |
-| [🔗](../../) | Základné príkazy | [01-basic](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/01-basic/README.md) | [01-basic](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/01-basic/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/01-basic) |
-| [🔗](../../) | Pridávanie položiek v TodoMVC | [02-adding-items](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/02-adding-items/README.md) | [02-adding-items](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/02-adding-items/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/02-adding-items) |
-| [🔗](../../) | Hráme sa so selectormi | [03-selector-playground](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/03-selector-playground/README.md) | [03-selector-playground](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/03-selector-playground/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/03-selector-playground) |
-| [🔗](../../) | Resetovanie stavu | [04-reset-state](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/04-reset-state/README.md) | [04-reset-state](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/04-reset-state/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/04-reset-state) |
-| [🔗](../../) | Pracujeme s networkom | [05-xhr](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/05-xhr/README.md) | [05-xhr](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/05-xhr/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/05-xhr) |
-| [🔗](../../) | Konfigurácia | - | [06-configuration](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/06-configuration/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/06-configuration) |
-| [🔗](../../) | Custom commandy | [07-custom-commands](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/cypress/integration/07-custom-commands/README.md) | [07-custom-commands](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/07-custom-commands/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/07-custom-commands) |
-| [🔗](../../) | Záver workshopu | - | [end](https://github.com/filiphric/cypress-workshop/tree/e1fcbaed1c3d927bb9f2d0908f2bfc831887fa18/slides/end/PITCHME.md) | [link](https://gitpitch.com/filiphric/cypress-workshop?p=slides/end) |
-
-## Thanks
-
-Thanks to Gleb Bahmutov, author of the original workshop found at [https://github.com/cypress-io/testing-workshop-cypress](https://github.com/cypress-io/testing-workshop-cypress), on which this workshop is heavily built on.
-
