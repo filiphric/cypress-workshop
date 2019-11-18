@@ -6,7 +6,7 @@
 
 ## Pre koho je určený workshop 🤓
 
-Workshop som vytváral hlavne pre testerov, ktorí majú záujem začať s automatizáciou v testovaní. V tomto ohľade považujem [Cypress.io](https://www.cypress.io/) za mimoriadne efektívny nástroj. So Cypressom je jednoduché začať, zároveň je však nástrojom, ktorí používajú aj profesionáli. 
+Workshop som vytváral hlavne pre testerov, ktorí majú záujem začať s automatizáciou v testovaní. V tomto ohľade považujem [Cypress.io](https://www.cypress.io/) za mimoriadne efektívny nástroj. So Cypressom je jednoduché začať, zároveň je však hodntoným nástrojom profesionálov vo firmách ako sú Adobe, Slack, Shopify, DHL či Kiwi.
 
 Ja sám som začal používať Cypress ešte v čase, keď som mal iba veľmi malé skúsenosti s JavaScriptom. Väčšinu toho, čo dnes ovládam, viem vďaka tomu, že som sa snažil vyriešiť nejaký problém v rámci testingu.
 
@@ -14,7 +14,7 @@ Nezáleží na tom, či má účastník/čka so Cypressom skúsenosti, alebo iba
 
 Workshop je rozdelený do modulov, ktoré je sa dajú kombinovať a prispôsobovať podľa potrieb a záujmu účastníkov.
 
-## Ako workshop vediem
+## Ako workshop vyzerá
 
 Pred workshopom prosím účastníkov, aby si [prešli prípravou](start/priprava-na-workshop/). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
 
