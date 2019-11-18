@@ -1,8 +1,8 @@
-# Cypress workshop
+# Cypress: From zero to hero 🚀
 
 ![To som ja &#x1F913;](.gitbook/assets/filip-speaker.png)
 
-Toto je úvodná stránka workshopu o testovaní pomocou [Cypress.io](https://www.cypress.io/). Táto stránka obsahuje všetko, čo počas workshopu slúži ako sprievodný študijný materiál. 
+> Vitajte! Volám sa Filip Hric a toto je kompletný workshop k téme test automation pomocou [Cypress.io](https://www.cypress.io/). Táto stránka obsahuje všetko, čo počas workshopu slúži ako sprievodný študijný materiál.
 
 ## Pre koho je určený workshop 🤓
 

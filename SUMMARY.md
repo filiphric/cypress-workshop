@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Cypress workshop](README.md)
+* [Cypress: From zero to hero 🚀](README.md)
 
 ## Úvod <a id="start"></a>
 
