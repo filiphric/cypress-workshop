@@ -1,7 +1,3 @@
----
-description: 'autor: Filip Hric'
----
-
 # Cypress workshop
 
 ![To som ja &#x1F913;](.gitbook/assets/filip-speaker.png)

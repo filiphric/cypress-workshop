@@ -25,6 +25,8 @@ npm install
 
 {% hint style="warning" %}
 Ak by niektorý z krokov skončil chybou, [skontroluj si prosím verziu Node a Git](skontroluj-si-verziu-node-a-git.md).
+
+Pokiaľ Ti nejde naklonovať repozitár, môžeš si ho stiahnúť ako .zip súbor [priamo na stránke GitHubu](https://github.com/filiphric/cypress-workshop).
 {% endhint %}
 
 ## Čo je v repozitári?
@@ -80,40 +82,9 @@ Otvor si browser a zadaj adresu `http://localhost:3000`. Aplikácia by mala byť
 
 ![](../../.gitbook/assets/snimka-obrazovky-2019-11-17-o-23.19.57.png)
 
-Ak všetko funguje, vypni proces pomocou `ctrl + c` 
-
 ### Aplikácia Realworld
 
 
-
-Ak je to potrebné nainštaluj dependencie vo vnútri TodoMVC foldra
-
-```bash
-cd todomvc
-npm install
-```
-
-### Kontrola ✅
-
-Skontroluj si či všetko funguje zadaním nasledovných príkazov do terminálu:
-
-```text
-cd todomvc
-npm start
-```
-
-
-
-Poznámka pre používateľov systému Windows: ak `npm start` vyhodí chybu, je to pradepodobne kvôli prvému príkazu v tomto skripte. Ak vidíš túto chybu, presuň sa prosím do foldra "todomvc" \(príkazom `cd todomvc`\) a zadaj príkaz `npm start` odtiaľ.
-
-Otvor si druhé kono terminálu a otvor si Cypress pomocou nasledovného príkazu:
-
-```bash
-$ npm run cy:open
-
-> testing-workshop-cypress@1.0.0 cy:open /git/testing-workshop-cypress
-> cypress open
-```
 
 ## Aplikácia 💾
 
