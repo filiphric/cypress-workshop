@@ -71,24 +71,28 @@ Po zadaní príkazu by si mal/a vidieť:
   http://localhost:3000/todos
 
   Home
-  http://localhost:3000
+  http://localhost:3004
 ```
 
 {% hint style="warning" %}
 Ak Ti príkaz vyhodí chybu, uisti sa, že sa nachádzaš v správnom foldri a že si prešiel/la všetkými krokmi inštalácie.
 {% endhint %}
 
-Otvor si browser a zadaj adresu `http://localhost:3000`. Aplikácia by mala byť live:
+Otvor si browser a zadaj adresu `http://localhost:3004`. Aplikácia by mala byť live:
 
 ![](../../.gitbook/assets/snimka-obrazovky-2019-11-17-o-23.19.57.png)
 
 ### Aplikácia Realworld
 
+Aplikáciu Realworld spustíš nasledovným príkazom:
 
+```text
+npm run start:realworld
+```
 
-## Aplikácia 💾
+Tento príkaz spustí webovú aplikáciu a server. Server beží na lokalite `localhost:3000` a webová aplikácia na `localhost:4100` Po otvorení tejto lokality by si v browseri mal vidieť nasledovnú stránku:
 
-[Vue.js](https://vuejs.org/) + [Vuex](https://vuex.vuejs.org/) + REST server aplikácia, ktorú budeme testovať je vo foldri `todomvc`. Aplikácia je popísaná [v tomto blogu](https://www.cypress.io/blog/2017/11/28/testing-vue-web-application-with-vuex-data-store-and-rest-backend/). Aplikácia beží aj bez pripojenia na internet
+![](../../.gitbook/assets/snimka-obrazovky-2019-11-18-o-23.48.34.png)
 
 ## Prezentácia  🖥
 
