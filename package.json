@@ -10,8 +10,8 @@
     "cy:run:realworld": "cypress run --project ./tests/realworld",
     "postinstall": "run-s install:todomvc install:realworld-client install:realworld-server",
     "reset:todomvc": "cd apps/todomvc && npm run reset",
-    "install:realworld-client": "cd apps/realworld/client && npm ci",
-    "install:realworld-server": "cd apps/realworld/server && npm ci",
+    "install:realworld-client": "cd apps/realworld/client && npm i",
+    "install:realworld-server": "cd apps/realworld/server && npm i",
     "install:todomvc": "cd apps/todomvc && npm install",
     "start:todomvc": "cd apps/todomvc && npm start",
     "start:realworld": "concurrently npm:start:client npm:start:server",
@@ -19,13 +19,12 @@
     "start:server": "cd apps/realworld/server && npm start"
   },
   "devDependencies": {
-    "cypress": "3.4.1",
     "concurrently": "4.1.2",
+    "cypress": "3.4.1",
     "debug": "4.1.1",
     "http-server": "0.11.1",
     "json-server": "0.15.1",
     "json-server-reset": "1.2.0",
-    "start-server-and-test": "1.10.5",
     "npm-run-all": "4.1.5"
   },
   "keywords": [],
