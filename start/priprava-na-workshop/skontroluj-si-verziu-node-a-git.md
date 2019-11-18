@@ -46,7 +46,7 @@ Ak by si náhodou natrafil/a na chybu a už si inštaloval/a Node, pravdepodobne
 
 ## Čo je to Git?
 
-Git je systém na manažovanie softvérových verzií v projekte. Git zaznamenáva zmeny v súboroch a udržiava históriu týchto zmien. Dátova štruktúra týchto zmien sa nazýva repozitár. Git budeme počas workshopu používať iba minimálne, na naklonovanie repozitára, v ktorom budeme pracovať. Ak by sa bol s inštaláciou problém, je možné ju vynechať
+Git je systém na manažovanie softvérových verzií v projekte. Git zaznamenáva zmeny v súboroch a udržiava históriu týchto zmien. Dátova štruktúra týchto zmien sa nazýva repozitár. Git budeme počas workshopu používať iba minimálne, na naklonovanie repozitára, v ktorom budeme pracovať. Ak by sa bol s inštaláciou problém, je možné ju vynechať, viď poznámka nižšie.
 
 ### Skontroluj si, či máš git:
 
@@ -56,13 +56,13 @@ Otvor si Terminál \(Mac, Linux\), alebo Command prompt \(Win\) a zadaj nasledov
 git --version
 ```
 
-{% hint style="warning" %}
 Ak by nastala chyba, vo väčšine prípadov by Ti počítač mal navrhnúť inštaláciu. Ak by sa tak nestalo, odporúčam inštaláciu [na oficiálnej stránke gitu](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-{% endhint %}
 
+{% hint style="danger" %}
 ## Nič mi nefunguje!
 
 Aj to sa môže stať. Ak je to Tvoj prípad, prosím [ozvi sa mi](mailto:filip@filiphric.sk) ešte pred začiatkom workshopu a pokúsime sa stretnúť vopred a vyriešiť problém.
 
-Ak náhodou používaš firemný počítač, je možné, že sú na ňom určité obmedzenia, ktoré bránia v tom, aby si vykonával/a tieto inštalácie. Prosím kontaktuj zodpovedné osoby, alebo skús použiť vlastný počítač 😉
+Ak náhodou používaš firemný počítač, je možné, že sú na ňom určité obmedzenia, ktoré bránia v tom, aby si vykonával/a tieto inštalácie. Prosím kontaktuj zodpovedné osoby, alebo si skús na workshop priniesť vlastný počítač 😉
+{% endhint %}
 
