@@ -1,6 +1,6 @@
 # Príprava na workshop
 
-## Technické požiadavky: ⚙️
+## Technické požiadavky:
 
 * Akýkoľvek počítač: Mac, Windows, Linux
 * Node verzia 8 alebo vyššia
@@ -11,6 +11,14 @@
 #### Node? Git? WTF? 😕
 
 Ak si nie si istý/á verziou Node a Git, [pomôžem Ti na tejto stránke](skontroluj-si-verziu-node-a-git.md)
+
+Pokiaľ Ti Git nič nehovorí, odporúčam si pred začiatkom workshopu aspoň zbežne naštudovať o čo ide. Nie je potrebné, aby si ovládal/a všetky príkazy, stačí mať základné pochopenie toho, na čo Git slúži. Odporúčam napríklad tento článok na [freecodecamp](https://www.freecodecamp.org/news/best-git-tutorial/).
+
+Takisto odporúčam prečítať si aj tento [krátky tutoriál o tom, čo je Node.js](https://www.freecodecamp.org/news/cjn-understanding-hello-world-in-nodejs/). Pomôže Ti to lepšie pochopiť kontext.
+
+Určite nezaškodí naštudovať si ani [základné príkazy v command line](https://www.freecodecamp.org/news/conquering-the-command-line-f85f5e46c07c/).
+
+Ak sa Ti z týchto vecí točí hlava, netráp sa. Všetko potrebné si počas workshopu dovysvetlíme.
 {% endhint %}
 
 ## Príprava:
@@ -68,7 +76,7 @@ Po zadaní príkazu by si mal/a vidieť:
   Done
 
   Resources
-  http://localhost:3000/todos
+  http://localhost:3004/todos
 
   Home
   http://localhost:3004
@@ -78,7 +86,7 @@ Po zadaní príkazu by si mal/a vidieť:
 Ak Ti príkaz vyhodí chybu, uisti sa, že sa nachádzaš v správnom foldri a že si prešiel/la všetkými krokmi inštalácie.
 {% endhint %}
 
-Otvor si browser a zadaj adresu `http://localhost:3004`. Aplikácia by mala byť live:
+Po zadaní príkazu by sa Ti mal otvoriť browser na lokalite `http://localhost:3004` a zobraziť by sa Ti mala nasledovná stránka:
 
 ![](../../.gitbook/assets/snimka-obrazovky-2019-11-17-o-23.19.57.png)
 
@@ -93,4 +101,6 @@ npm run start:realworld
 Tento príkaz spustí webovú aplikáciu a server. Server beží na lokalite `localhost:3000` a webová aplikácia na `localhost:4100` Po otvorení tejto lokality by si v browseri mal vidieť nasledovnú stránku:
 
 ![](../../.gitbook/assets/snimka-obrazovky-2019-11-18-o-23.48.34.png)
+
+
 
