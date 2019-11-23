@@ -15,7 +15,7 @@ node -v
 V ideálnom prípade by si ako odpoveď mal dostať nejakú takúto odpoveď:
 
 ```bash
-v8.11.4
+v12.13.1
 ```
 
 {% hint style="warning" %}

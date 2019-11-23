@@ -41,9 +41,7 @@ Pokiaľ Ti nejde naklonovať repozitár, môžeš si ho stiahnúť ako .zip súb
 
 V repozitári sa nachádza všetko, čo budeme počas workshopu potrebovať.
 
-* aplikácie, ktoré budeme spoločne testovať:
-  * TodoMVC
-  * Realworld
+* aplikáciu TodoMVC, ktoré budeme spoločne testovať:
 * Cypress
 * všetky potrebné moduly a skripty
 
@@ -76,31 +74,19 @@ Po zadaní príkazu by si mal/a vidieť:
   Done
 
   Resources
-  http://localhost:3004/todos
+  http://localhost:3000/todos
 
   Home
-  http://localhost:3004
+  http://localhost:3000
 ```
 
 {% hint style="warning" %}
 Ak Ti príkaz vyhodí chybu, uisti sa, že sa nachádzaš v správnom foldri a že si prešiel/la všetkými krokmi inštalácie.
 {% endhint %}
 
-Po zadaní príkazu by sa Ti mal otvoriť browser na lokalite `http://localhost:3004` a zobraziť by sa Ti mala nasledovná stránka:
+Po zadaní príkazu by sa Ti mal otvoriť browser na lokalite `http://localhost:3000` a zobraziť by sa Ti mala nasledovná stránka:
 
 ![](../../.gitbook/assets/snimka-obrazovky-2019-11-17-o-23.19.57.png)
-
-### Aplikácia Realworld
-
-Aplikáciu Realworld spustíš nasledovným príkazom:
-
-```text
-npm run start:realworld
-```
-
-Tento príkaz spustí webovú aplikáciu a server. Server beží na lokalite `localhost:3000` a webová aplikácia na `localhost:4100` Po otvorení tejto lokality by si v browseri mal vidieť nasledovnú stránku:
-
-![](../../.gitbook/assets/snimka-obrazovky-2019-11-18-o-23.48.34.png)
 
 
 
