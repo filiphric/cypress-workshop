@@ -5,6 +5,6 @@
 ## Príprava na workshop <a id="start"></a>
 
 * [Technické požiadavky](start/technicke-poziadavky.md)
-* [Skontroluj si verziu Node a Git](start/skontroluj-si-verziu-node-a-git.md)
-* [Príprava + inštalácia](start/priprava-+-instalacia.md)
+* [Príprava + inštalácia](start/priprava-+-instalacia/README.md)
+  * [Skontroluj si verziu Node a Git](start/priprava-+-instalacia/skontroluj-si-verziu-node-a-git.md)
 
