@@ -16,7 +16,7 @@ Workshop je rozdelený do modulov, ktoré je sa dajú kombinovať a prispôsobov
 
 ## Ako workshop vyzerá
 
-Pred workshopom prosím účastníkov, aby si [prešli prípravou](start/priprava-na-workshop/). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
+Pred workshopom prosím účastníkov, aby si [prešli prípravou](). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
 
 Workshop je rozdelený do menších modulov. Väčšina modulov kopíruje nasledovnú štruktúru:
 
@@ -34,16 +34,15 @@ S účastníkmi workshopu si tykáme.
 
 ## Krátko o mne
 
-Vyštudoval som psychológiu. Verím, že mi to pomáha vo svete technológii udržiavať fokus na človeka.
-
-Zároveň som však beznádejný technofil, čo zrejme spôsobilo to, že po pár rokoch psychologického poradenstva som nakoniec zakotvil v technickom odvetví. Na pohľad je to dlhý skok, no odkedy robím testera, cítim, že mám srdce na pravom mieste. Slovami klasika: _„Ja si to užívam, ja sa cítim dobre.“_
+Vyštudoval som psychológiu. Verím, že táto skúsenosť mi to pomáha vo svete technológii udržiavať fokus na človeka. Zároveň som však beznádejný technofil, čo zrejme spôsobilo to, že po pár rokoch psychologického poradenstva som nakoniec zakotvil v technickom odvetví. Na pohľad je to veľký skok, no odkedy robím testera, cítim, že mám srdce na pravom mieste. Slovami klasika: _„Ja si to užívam, ja sa cítim dobre.“_
 
 Momentálne pracujem ako QA lead v spoločnosti Slido. Vediem náš 6-členný QA tím a starám sa o automatizáciu. Dennodenne tvorím automatické testy v Cypresse, ktorých je už takmer 1000, a ktoré pomáhajú zaistiť releasovanie v Slido. To je aktuálne na úrovni cca 40 releasov mesačne 😅
 
-Sledovať a kontaktovať ma možno
+Sledovať a kontaktovať ma možno na:
 
 * [Linkedin](https://www.linkedin.com/in/filip-hric-11a5b1126/)
 * [Twitter](https://twitter.com/filip_hric)
-* [filip@filiphric.sk](mailto:filip@filiphric.sk)
-* ale hlavne [na mojom blogu na mediume](https://medium.com/@filiphric)
+* emailovo [filip@filiphric.sk](mailto:filip@filiphric.sk)
+* [na mojom blogu na medium](https://medium.com/@filiphric), kde píšem Cypress tipy
+* alebo na konferenciách, workshopoch či iných príjemných príležitostiach 🍻
 
