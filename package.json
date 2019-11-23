@@ -4,23 +4,16 @@
   "description": "Cypress workshop",
   "main": "index.js",
   "scripts": {
-    "cy:open:todomvc": "cypress open --project ./tests/todomvc",
-    "cy:run:todomvc": "cypress run --project ./tests/todomvc",
-    "cy:open:realworld": "cypress open --project ./tests/realworld",
-    "cy:run:realworld": "cypress run --project ./tests/realworld",
-    "postinstall": "run-s install:todomvc install:realworld-client install:realworld-server",
-    "reset:todomvc": "cd apps/todomvc && npm run reset",
-    "install:realworld-client": "cd apps/realworld/client && npm i",
-    "install:realworld-server": "cd apps/realworld/server && npm i",
-    "install:todomvc": "cd apps/todomvc && npm install",
-    "start:todomvc": "cd apps/todomvc && npm start",
-    "start:realworld": "concurrently npm:start:client npm:start:server",
-    "start:client": "cd apps/realworld/client && npm start",
-    "start:server": "cd apps/realworld/server && npm start"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "postinstall": "install:todomvc",
+    "reset:todomvc": "cd todomvc && npm run reset",
+    "install:todomvc": "cd todomvc && npm install",
+    "start:todomvc": "run-p \"cd todomvc && npm start\" \"cd todomvc && npm run open\""
   },
   "devDependencies": {
     "concurrently": "4.1.2",
-    "cypress": "3.4.1",
+    "cypress": "^3.6.1",
     "debug": "4.1.1",
     "http-server": "0.11.1",
     "json-server": "0.15.1",
@@ -29,5 +22,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-pre-gyp": "^0.14.0"
+  }
 }

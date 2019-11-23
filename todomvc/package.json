@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Testing Vue + Vuex + REST TodoMVC using Cypress",
   "scripts": {
-    "start": "./node_modules/.bin/json-server --static . data.json --middlewares ./node_modules/json-server-reset --port 3004",
+    "open": "cross-env open http://localhost:3000",
+    "start": "./node_modules/.bin/json-server --static . data.json --middlewares ./node_modules/json-server-reset --port 3000",
     "reset": "node reset-db.js",
     "reset:db": "npm run reset",
     "reset:database": "npm run reset"
