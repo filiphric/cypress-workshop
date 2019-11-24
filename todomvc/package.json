@@ -12,5 +12,8 @@
   "dependencies": {
     "json-server": "0.15.1",
     "json-server-reset": "1.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "6.0.3"
   }
 }

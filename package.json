@@ -6,24 +6,22 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "postinstall": "install:todomvc",
-    "reset:todomvc": "cd todomvc && npm run reset",
     "install:todomvc": "cd todomvc && npm install",
-    "start:todomvc": "run-p \"cd todomvc && npm start\" \"cd todomvc && npm run open\""
+    "postinstall": "npm run install:todomvc",
+    "reset:todomvc": "cd todomvc && npm run reset",
+    "start": "concurrently npm:todomvc:open npm:todomvc:start",
+    "todomvc:open": "cd todomvc && npm run open",
+    "todomvc:start": "cd todomvc && npm start"
   },
   "devDependencies": {
     "concurrently": "4.1.2",
     "cypress": "^3.6.1",
-    "debug": "4.1.1",
     "http-server": "0.11.1",
     "json-server": "0.15.1",
     "json-server-reset": "1.2.0",
-    "npm-run-all": "4.1.5"
+    "node-gyp": "^6.0.1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "node-pre-gyp": "^0.14.0"
-  }
+  "license": "ISC"
 }
