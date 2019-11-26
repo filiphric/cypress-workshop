@@ -19,3 +19,9 @@ Pre rýchlejšie otváranie je dobrou praxou vytvoriť si v `package.json` nasle
 }
 ```
 
+{% hint style="info" %}
+Príkaz`cypress run` slúži na spustenie testov v headless móde, o ktorom si povieme v ďalších kapitolách
+{% endhint %}
+
+\`\`
+

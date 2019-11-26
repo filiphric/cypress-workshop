@@ -12,7 +12,9 @@
 
 ## Začíname
 
-* [Vytvorenie projektu v Cypress](zaciname/vytvorenie-projektu-v-cypress/README.md)
-  * [Cypress projekt a jeho štruktúra](zaciname/vytvorenie-projektu-v-cypress/cypress-projekt-a-jeho-struktura.md)
-  * [Cypress GUI](zaciname/vytvorenie-projektu-v-cypress/cypress-gui.md)
+* [Tvoríme prvý Cypress projekt](zaciname/vytvorenie-projektu-v-cypress.md)
+* [Cypress projekt a jeho štruktúra](zaciname/cypress-projekt-a-jeho-struktura/README.md)
+  * [Praktické cvičenie](zaciname/cypress-projekt-a-jeho-struktura/prakticke-cvicenie.md)
+  * [Cypress GUI](zaciname/cypress-projekt-a-jeho-struktura/cypress-gui.md)
+* [Prvý test](zaciname/prvy-test.md)
 
