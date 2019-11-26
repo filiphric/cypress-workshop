@@ -10,3 +10,8 @@
 * [Repozitár + Inštalácia](start/priprava-+-instalacia/README.md)
   * [Skontroluj si verziu Node a Git](start/priprava-+-instalacia/skontroluj-si-verziu-node-a-git.md)
 
+## Začíname
+
+* [Vytvorenie projektu v Cypress](zaciname/vytvorenie-projektu-v-cypress/README.md)
+  * [Cypress projekt a jeho štruktúra](zaciname/vytvorenie-projektu-v-cypress/cypress-projekt-a-jeho-struktura.md)
+

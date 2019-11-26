@@ -1,18 +1,16 @@
 # O workshope
 
-## Pre koho je určený workshop 🤓
+## Pre koho je workshop určený 🤓
 
-Workshop som vytváral hlavne pre testerov, ktorí majú záujem začať s automatizáciou v testovaní. Je však vhodný aj pre develeoperov, ktorí by sa radi so Cypressom zoznámili. So Cypressom je jednoduché začať, zároveň je však hodntoným nástrojom profesionálov vo firmách ako sú Adobe, Slack, Shopify, DHL či Kiwi.
-
-Ja sám som začal používať Cypress ešte v čase, keď som mal iba veľmi malé skúsenosti s JavaScriptom. Väčšinu toho, čo dnes ovládam, viem vďaka tomu, že som sa snažil vyriešiť nejaký problém v rámci testovania.
+Workshop som vytváral hlavne pre testerov, ktorí majú záujem začať s automatizáciou v testovaní. Je však vhodný aj pre develeoperov, ktorí by sa radi so Cypressom zoznámili. Obsah workshopu je flexibilný, preto je možné upraviť ho podľa potrieb a znalostí účastníkov. So Cypressom je jednoduché začať, zároveň je však hodnotným nástrojom profesionálov vo firmách ako sú Adobe, Slack, Shopify, DHL či Kiwi.
 
 Nezáleží na tom, či má účastník/čka so Cypressom skúsenosti, alebo iba začína, potreby na workshope ladím podľa vedomostí účastníkov. Z vlastnej skúsenosti viem, že kombinácia skúsenejších a menej skúsených účastníkov býva skôr prospešná, než kontraporduktívna.
 
-Workshop je rozdelený do modulov, ktoré je sa dajú kombinovať a prispôsobovať podľa potrieb a záujmu účastníkov.
+Workshop je rozdelený do modulov, ktoré sa dajú kombinovať a prispôsobovať podľa potrieb a záujmu účastníkov.
 
 ## Ako workshop vyzerá
 
-Pred workshopom prosím účastníkov, aby si [prešli prípravou](). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
+Pred workshopom prosím účastníkov, aby si [prešli prípravou](start/technicke-poziadavky.md). Ide hlavne o inštalácie a kontrolu potrebných prerekvizít. To nám zaistí rovnakú štatovaciu čiaru.
 
 Workshop je rozdelený do menších modulov. Väčšina modulov kopíruje nasledovnú štruktúru:
 
