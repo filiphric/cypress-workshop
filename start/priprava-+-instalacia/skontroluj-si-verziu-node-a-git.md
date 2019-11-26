@@ -46,7 +46,7 @@ Ak by si náhodou natrafil/a na chybu a už si inštaloval/a Node, pravdepodobne
 
 ## Čo je to Git?
 
-Git je systém na manažovanie softvérových verzií v projekte. Git zaznamenáva zmeny v súboroch a udržiava históriu týchto zmien. Dátova štruktúra týchto zmien sa nazýva repozitár. Git budeme počas workshopu používať iba minimálne, na naklonovanie repozitára, v ktorom budeme pracovať. Ak by sa bol s inštaláciou problém, je možné ju vynechať, viď poznámka nižšie.
+Git je systém na manažovanie softvérových verzií v projekte. Git zaznamenáva zmeny v súboroch a udržiava históriu týchto zmien. Dátova štruktúra týchto zmien sa nazýva repozitár. Git budeme počas workshopu používať iba minimálne - na naklonovanie repozitára, v ktorom budeme pracovať. Ak by sa bol s inštaláciou problém, je možné ju vynechať. Skrátka si stiahni repozitár ako [zip súbor priamo z GitHubu](https://github.com/filiphric/cypress-workshop).
 
 ### Skontroluj si, či máš git:
 
@@ -59,7 +59,7 @@ git --version
 Ak by nastala chyba, vo väčšine prípadov by Ti počítač mal navrhnúť inštaláciu. Ak by sa tak nestalo, odporúčam inštaláciu [na oficiálnej stránke gitu](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 {% hint style="danger" %}
-## Nič mi nefunguje!
+## Nič mi nefunguje! 🤬
 
 Aj to sa môže stať. Ak je to Tvoj prípad, prosím [ozvi sa mi](mailto:filip@filiphric.sk) ešte pred začiatkom workshopu a pokúsime sa stretnúť vopred a vyriešiť problém.
 

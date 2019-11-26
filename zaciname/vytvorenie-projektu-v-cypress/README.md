@@ -1,9 +1,9 @@
 # Vytvorenie projektu v Cypress
 
-## Naučíš sa
+## 📚 Naučíš sa:
 
-* Cypress projekt a jeho štruktúra
-* Prvý test
-* Nastavenie intelligent code completion
+* Ako vyzerá Cypress projekt a aká je jeho štruktúra
+* Ako napísať svoj prvý test
+* Ako si nastaviť intelligent code completion
 * Ako používať Cypress dokumentáciu
 
