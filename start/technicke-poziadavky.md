@@ -1,5 +1,7 @@
 # 🔧 Technické požiadavky
 
+### Pre úspešný priebeh workshopu budeš potrebovať
+
 * Akýkoľvek počítač: Mac, Windows, Linux
 * Node.js vo verzii 8 alebo vyššej
 * git
