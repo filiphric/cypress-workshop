@@ -8,6 +8,8 @@ Nezáleží na tom, či má účastník/čka so Cypressom skúsenosti, alebo iba
 
 Workshop je rozdelený do modulov, ktoré sa dajú kombinovať a prispôsobovať podľa potrieb a záujmu účastníkov.
 
+Materiály workshopu sú zadarmo, no [k workshopu je možné poskytnúť aj lektorovanie](lektorovanie-workshopu.md).
+
 ## Ako workshop vyzerá
 
 Workshop môže zabrať polku dňa, deň alebo aj dva. Všetko závisí od požiadaviek účastníkov. Na worshope účastníci pracujú s kódom, a vytvárajú testy počas praktivckých cvičení, preto je potrebné mať počas workshopu notebook \(a nabíjačku\).

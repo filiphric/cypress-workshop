@@ -26,5 +26,28 @@ V textovom editore môžeš vidieť, že Cypress vytvoril nový folder `new-proj
 | cypress/plugins | Cypress pluginy |
 | cypress/support | commandy, utility, defaultné akcie |
 
+## Ako otvoriť Cypress GUI
 
+```bash
+npx cypress open
+$(npm bin)/cypress open
+./node_modules/.bin/cypress open
+```
+
+Pre rýchlejšie otváranie je dobrou praxou vytvoriť si v `package.json` nasledovné skripty:
+
+```javascript
+{
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  }
+}
+```
+
+{% hint style="info" %}
+Príkaz`cypress run` slúži na spustenie testov v headless móde, o ktorom si povieme v ďalších kapitolách
+{% endhint %}
+
+\`\`
 
