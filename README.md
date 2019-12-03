@@ -11,5 +11,5 @@ Ak nevieš ako na to, si tu správne. Ak vieš, ale chceš sa niečo nové nauč
 
 Vítam Ťa na workshope o písaní automatických testov pre Cypress
 
-![Photo author - welcometothejungle.com](.gitbook/assets/large_dd059a4b-9ee6-4dde-b789-73a97df46601.jpg)
+![Photo author - welcometothejungle.com](docs/.gitbook/assets/large_dd059a4b-9ee6-4dde-b789-73a97df46601.jpg)
 
