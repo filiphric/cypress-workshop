@@ -1,21 +1,21 @@
 # Table of contents
 
 * [Cypress: From zero to hero 🚀](README.md)
-* [O workshope](o-workshope.md)
-* [Lektorovanie workshopu](lektorovanie-workshopu.md)
-* [👨‍💻 Krátko o mne](kratko-o-mne.md)
+* [O workshope](docs/o-workshope.md)
+* [Lektorovanie workshopu](docs/lektorovanie-workshopu.md)
+* [👨‍💻 Krátko o mne](docs/kratko-o-mne.md)
 
 ## Príprava na workshop <a id="start"></a>
 
-* [🔧 Technické požiadavky](start/technicke-poziadavky.md)
-* [💻 Repozitár + Inštalácia](start/priprava-+-instalacia/README.md)
-  * [Skontroluj si verziu Node a Git](start/priprava-+-instalacia/skontroluj-si-verziu-node-a-git.md)
+* [🔧 Technické požiadavky](docs/start/technicke-poziadavky.md)
+* [💻 Repozitár + Inštalácia](docs/start/priprava-+-instalacia/README.md)
+  * [Skontroluj si verziu Node a Git](docs/start/priprava-+-instalacia/skontroluj-si-verziu-node-a-git.md)
 
 ## Začíname
 
-* [Tvoríme prvý Cypress projekt](zaciname/vytvorenie-projektu-v-cypress.md)
-* [Cypress projekt a jeho štruktúra](zaciname/cypress-projekt-a-jeho-struktura/README.md)
-  * [Praktické cvičenie](zaciname/cypress-projekt-a-jeho-struktura/prakticke-cvicenie.md)
-* [Píšeme prvý test](zaciname/prvy-test.md)
-* [Intelligent code completion](zaciname/intelligent-code-completion.md)
+* [Tvoríme prvý Cypress projekt](docs/zaciname/vytvorenie-projektu-v-cypress.md)
+* [Cypress projekt a jeho štruktúra](docs/zaciname/cypress-projekt-a-jeho-struktura/README.md)
+  * [Praktické cvičenie](docs/zaciname/cypress-projekt-a-jeho-struktura/prakticke-cvicenie.md)
+* [Píšeme prvý test](docs/zaciname/prvy-test.md)
+* [Intelligent code completion](docs/zaciname/intelligent-code-completion.md)
 
