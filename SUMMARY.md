@@ -25,5 +25,7 @@
 ## Základné príkazy
 
 * [📚 Obsah kapitoly](zakladne-prikazy/obsah-kapitoly.md)
-* [cy.contains](zakladne-prikazy/cy.contains.md)
+* [cy.contains](zakladne-prikazy/cy.contains/README.md)
+  * [Praktické cvičenie](zakladne-prikazy/cy.contains/prakticke-cvicenie.md)
+  * [Riešenie úloh a otázok](zakladne-prikazy/cy.contains/riesenie-uloh-a-otazok.md)
 
