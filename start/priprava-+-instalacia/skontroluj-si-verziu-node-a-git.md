@@ -22,7 +22,7 @@ v12.13.1
 Ak sa Ti namiesto tohto zobrazila chyba, pravdepodobne nemáš nainštalovaný Node. Inštalácia nie je vôbec zložitá. Stačí ak pôjdeš na stránku Node a [stiahneš si aktuálnu verziu](https://nodejs.org/en/). Pokiaľ by bola táto inštrukcia príliš zložitá, skús jeden z nasledovných návodov:
 
 * pre [**Windows**](https://treehouse.github.io/installation-guides/windows/node-windows.html)\*\*\*\*
-* pre ****[**Mac**](https://treehouse.github.io/installation-guides/mac/node-mac.html%20)\*\*\*\*
+* pre **\*\*\[**Mac_\*\]\(_[https://treehouse.github.io/installation-guides/mac/node-mac.html \)\](https://treehouse.github.io/installation-guides/mac/node-mac.html%20%29\)\*\*\*
 * pre [**Linux**](https://treehouse.github.io/installation-guides/linux/node-linux.html)\*\*\*\*
 
 _\(návody sú angličtine\)_
