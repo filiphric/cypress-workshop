@@ -4,7 +4,7 @@
 
 * Kde nájdeš dokumentáciu pre cy.contains command?
 
-> https://on.cypress.io/contains
+> [https://on.cypress.io/contains](https://on.cypress.io/contains)
 
 * Ako funguje cy.contains command?
 
