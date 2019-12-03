@@ -12,7 +12,8 @@
 
 * oprav test
 
-### Pokročilá úloha:
+### Pokročilé úlohy:
 
 * uprav test tak, aby padol, ale až po 10 sekundách
+* uprav test tak, aby používall regulárny výraz \(regex\)
 
