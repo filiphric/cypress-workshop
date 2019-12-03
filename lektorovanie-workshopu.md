@@ -4,5 +4,5 @@ Materiály workshopu sú k dispozícii zadarmo. Chcem tak otvoriť dvere všetk�
 
 Pokiaľ ste firma, skupina, alebo jednotlivec, viem workshop na požiadanie lektorovať. Cena workshopu je flexibilná a závisí od počtu účastníkov, požadovanej úrovne, času a samozrejme obsahu workshopu.
 
-**Neváhajte ma kontaktovať cez** [**LinkedIn**](https://www.linkedin.com/in/filip-hric-11a5b1126/)**, alebo emailovo na** [**filip@filiphric.sk**](mailto:filip@filiphric.sk)\*\*\*\*
+**Neváhajte ma kontaktovať cez** [**LinkedIn**](https://www.linkedin.com/in/filip-hric-11a5b1126/)**, alebo emailovo na** [**filip@filiphric.sk**](mailto:filip@filiphric.sk)
 

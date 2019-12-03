@@ -11,7 +11,7 @@ it('loads', () => {
 
 Autocomplete + dokumentácia priamo v kóde:
 
-![](../.gitbook/assets/cy-get-intellisense.jpeg)
+![](../.gitbook/assets/cy-get-intellisense%20%282%29.jpeg)
 
 Ak chceš ísť o krok ďalej, uprav kód nasledovne:
 

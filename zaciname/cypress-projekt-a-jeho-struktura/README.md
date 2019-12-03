@@ -14,11 +14,11 @@ Po otvorení sa Ti otvorí GUI:
 
 V textovom editore môžeš vidieť, že Cypress vytvoril nový folder `new-project`, v ktorom sa nachádzajú ďalšie súbory.
 
-![](../../.gitbook/assets/snimka-obrazovky-2019-11-25-o-22.22.28.png)
+![](../../.gitbook/assets/snimka-obrazovky-2019-11-25-o-22.22.28%20%281%29.png)
 
 ### Na čo slúžia jednotlivé súbory
 
-|  Názov | Popis |
+| Názov | Popis |
 | :--- | :--- |
 | cypress.json | Cypress settings |
 | cypress/integration | test súbory |

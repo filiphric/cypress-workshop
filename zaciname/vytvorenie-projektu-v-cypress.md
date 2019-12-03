@@ -1,4 +1,4 @@
-# Tvoríme prvý Cypress projekt
+# 📚 Obsah kapitoly
 
 ## 📚 Naučíš sa:
 
@@ -8,6 +8,5 @@
 
 {% page-ref page="intelligent-code-completion.md" %}
 
-* Ako si nastaviť intelligent code completion
-* Ako používať Cypress dokumentáciu
+{% page-ref page="cypress-dokumentacia.md" %}
 

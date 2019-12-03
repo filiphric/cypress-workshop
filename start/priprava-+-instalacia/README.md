@@ -24,7 +24,7 @@ V repozitári sa nachádza všetko, čo budeme počas workshopu potrebovať.
 
 ## Skúška správnosti
 
-Pred workshopom odporúčam vyskúšať, či Ti aplikácia TodoMVC funguje. Aplikáciu budeme používať počas nášho workshopu. Nepôjdeme teda na živý server, alebo web niekde na internete, ale pobeží nám všetko lokálne. 
+Pred workshopom odporúčam vyskúšať, či Ti aplikácia TodoMVC funguje. Aplikáciu budeme používať počas nášho workshopu. Nepôjdeme teda na živý server, alebo web niekde na internete, ale pobeží nám všetko lokálne.
 
 ### Aplikácia TodoMVC <a id="aplikacia-todomvc"></a>
 
@@ -63,10 +63,4 @@ Mal/a by si vidieť niečo ako:
 
 Ak vidíš inú cestu, presuň sa prosím na správne miesto 🙂
 {% endhint %}
-
-
-
-
-
-
 
