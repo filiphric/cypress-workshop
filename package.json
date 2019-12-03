@@ -22,6 +22,6 @@
     "node-gyp": "^6.0.1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Filip Hric",
   "license": "ISC"
 }
