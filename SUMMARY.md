@@ -3,6 +3,7 @@
 * [Cypress: From zero to hero 🚀](README.md)
 * [O workshope](o-workshope.md)
 * [Lektorovanie workshopu](lektorovanie-workshopu.md)
+* [⭐ Hodnotenia workshopu](hodnotenia-workshopu.md)
 * [👨‍💻 Krátko o mne](kratko-o-mne.md)
 
 ## Príprava na workshop <a id="start"></a>
