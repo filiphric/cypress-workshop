@@ -3,12 +3,12 @@
 beforeEach(function resetData () {
   cy.request('POST', '/reset', {
     todos: []
-  })
-})
+  });
+});
 
 it('enters 10 todos', function () {
 
-  cy.visit('/')
+  cy.visit('/');
 
   cy.get('.new-todo')
     .type('todo 0{enter}')
@@ -20,8 +20,8 @@ it('enters 10 todos', function () {
     .type('todo 6{enter}')
     .type('todo 7{enter}')
     .type('todo 8{enter}')
-    .type('todo 9{enter}')
-  cy.get('.todo').should('have.length', 10)
-})
+    .type('todo 9{enter}');
+  cy.get('.todo').should('have.length', 10);
+});
 
 // it('creates a todo')

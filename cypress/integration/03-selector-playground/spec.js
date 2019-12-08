@@ -2,11 +2,11 @@
 beforeEach(() => {
   // application should be running at port 3000
   // and the "localhost:3000" is set as "baseUrl" in "cypress.json"
-  cy.visit('/')
-})
+  cy.visit('/');
+});
 it('loads', () => {
-  cy.contains('h1', 'todos')
-})
+  cy.contains('h1', 'todos');
+});
 // optional test data attribute selector helper
 // const tid = id => `[data-cy="${id}"]`
 /**
@@ -15,11 +15,11 @@ it('loads', () => {
  */
 const addItem = text => {
   // write Cy commands here to add the new item
-}
+};
 it('adds two items', () => {
-  addItem('first item')
-  addItem('second item')
+  addItem('first item');
+  addItem('second item');
   // fill the selector
   // maybe use "tid" function
-  cy.get('...').should('have.length', 2)
-})
+  cy.get('...').should('have.length', 2);
+});

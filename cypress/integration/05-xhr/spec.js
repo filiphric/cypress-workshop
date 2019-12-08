@@ -5,23 +5,23 @@
 // then these tests fail!
 
 it('starts with zero items (waits)', () => {
-  cy.visit('/')
+  cy.visit('/');
   // wait 1 second
   // then check the number of items
-  cy.get('li.todo').should('have.length', 0)
-})
+  cy.get('li.todo').should('have.length', 0);
+});
 
 it('starts with zero items', () => {
   // start Cypress network proxy with cy.server()
   // spy on route `GET /todos`
   //  with cy.route(...).as(<alias name>)
   // THEN visit the page
-  cy.visit('/')
+  cy.visit('/');
   // wait for `GET /todos` route
   //  using "@<alias name>" string
   // then check the DOM
-  cy.get('li.todo').should('have.length', 0)
-})
+  cy.get('li.todo').should('have.length', 0);
+});
 
 it('starts with zero items (stubbed response)', () => {
   // start Cypress network server
@@ -29,44 +29,44 @@ it('starts with zero items (stubbed response)', () => {
   // save the stub as an alias
 
   // THEN visit the page
-  cy.visit('/')
+  cy.visit('/');
 
   // wait for the route alias
   // grab its response body
   // and make sure the body is an empty list
-})
+});
 
 it('starts with zero items (fixture)', () => {
   // start Cypress network server
   // stub `GET /todos` with fixture "empty-list"
 
   // visit the page
-  cy.visit('/')
+  cy.visit('/');
 
   // then check the DOM
-  cy.get('li.todo').should('have.length', 0)
-})
+  cy.get('li.todo').should('have.length', 0);
+});
 
 it('loads several items from a fixture', () => {
   // start Cypress network server
   // stub route `GET /todos` with data from a fixture file "two-items.json"
   // THEN visit the page
-  cy.visit('/')
+  cy.visit('/');
   // then check the DOM: some items should be marked completed
   // we can do this in a variety of ways
-})
+});
 
 it('posts new item to the server', () => {
   // start Cypress network server
   // spy on "POST /todos", save as alias
-  cy.visit('/')
-  cy.get('.new-todo').type('test api{enter}')
+  cy.visit('/');
+  cy.get('.new-todo').type('test api{enter}');
 
   // wait on XHR call using the alias, grab its request or response body
   // and make sure it contains
   // {title: 'test api', completed: false}
   // hint: use cy.wait(...).its(...).should('have.contain', ...)
-})
+});
 
 it('handles 404 when loading todos', () => {
   // when the app tries to load items
@@ -85,11 +85,11 @@ it('handles 404 when loading todos', () => {
     onBeforeLoad: win => {
       // spy
     }
-  })
+  });
   // observe external effect from the app - console.error(...)
   // cy.get('@console-error')
   //   .should(...)
-})
+});
 
 it('shows loading element', () => {
   // delay XHR to "/todos" by a few seconds
@@ -97,4 +97,4 @@ it('shows loading element', () => {
   // shows Loading element
   // wait for the network call to complete
   // now the Loading element should go away
-})
+});
