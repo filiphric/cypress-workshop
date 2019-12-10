@@ -12,24 +12,19 @@ it('selects element input field', () => {
 
   // pomocou devtools
   cy
-    .get('...');
+    .get('body > section > header > input');
 
   // cez id
   cy
-    .get('...');
+    .get('#new-todo');
 
   // cez classu
   cy
-    .get('...');
+    .get('.new-todo');
 
   // pomocou testing library
   cy
-    .findByPlaceholderText('...');
-
-  // pomocou traverzovania
-  cy
-    .get('header');
-  // akým commandom sa vieme dostať od headeru k input fieldu?
+    .findByPlaceholderText('What needs to be done?');
     
 });
 
@@ -37,14 +32,14 @@ it('selects heading', () => {
 
   // cez data-cy atribút
   cy
-    .get('...');
+    .get('[data-cy=app-title]');
 
   // cez text
   cy
-    .contains('...');
+    .contains('todos');
 
   // cez regulárny výraz (regex)
   cy
-    .contains('...');
+    .contains(/^todos$/);
   
 });
