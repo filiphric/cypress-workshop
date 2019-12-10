@@ -1,19 +1,15 @@
 /// <reference types="cypress" />
-beforeEach(() => {
+it('loads', () => {
 
   cy
     .visit('localhost:3000');
 
 });
 
-it('loads', () => {
+it('Has zero items', () => {
 
   cy
-    .contains('h1', 'todos');
-
-});
-
-it('Has zero items', () => {
+    .visit('localhost:3000');
 
   cy
     .get('li.todo')
@@ -22,6 +18,9 @@ it('Has zero items', () => {
 });
 
 it('Adds two items', () => {
+
+  cy
+    .visit('localhost:3000');
 
   cy
     .get('.new-todo')
@@ -41,15 +40,18 @@ it('Adds two items', () => {
 
 });
 
-/**
- * Adds a todo item
- * @param {string} text
- */
-const addItem = text => {
-  cy.get('.new-todo').type(`${text}{enter}`);
-};
-
 it('Adds many items', () => {
+
+  const addItem = text => {
+
+    cy
+      .get('.new-todo')
+      .type(`${text}{enter}`);
+  
+  };
+
+  cy
+    .visit('localhost:3000');
 
   const N = 5;
   for (let k = 0; k < N; k += 1) {
@@ -62,23 +64,29 @@ it('Adds many items', () => {
   
 });
 
-it('Marks items as completed', () => {
-
-  addItem('simple');
+it('Marks item as completed and deletes item', () => {
 
   cy
-    .contains('li.todo', 'simple')
-    .should('exist')
-    .find('input[type="checkbox"]')
+    .visit('localhost:3000');
+
+  cy
+    .get('.new-todo')
+    .type('simple{enter}');
+
+  cy
+    .contains('simple')
+    .should('exist');
+
+  cy
+    .get('input[type="checkbox"]')
     .check();
 
   cy
-    .contains('li.todo', 'simple')
-    .find('.destroy')
+    .get('.destroy')
     .click({ force: true });
 
   cy
-    .contains('li.todo', 'simple')
+    .contains('simple')
     .should('not.exist');
 
 });

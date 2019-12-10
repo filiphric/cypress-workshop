@@ -4,9 +4,6 @@ it('loads', () => {
   cy
     .visit('localhost:3000');
 
-  cy
-    .contains('h1', 'todos');
-
 });
 
 it('Has zero items', () => {
@@ -25,12 +22,12 @@ it('Adds many items', () => {
 
   const N = 5;
   for (let k = 0; k < N; k += 1) {
-    // pridaj do testu ľubovoľný počet položiek a použi na to funkciu
+    // pridaj do testu ľubovoľný počet (N) položiek a použi na to funkciu
   }
 
 });
 
-it('Marks items as completed', () => {
+it('Marks item as completed and deletes item', () => {
 
   // označ poloźku ako hotovú
   
