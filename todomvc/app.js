@@ -66,7 +66,6 @@
             console.error(e.response.data);
           });
       },
-
       /**
        * Sets text for the future todo
        *
