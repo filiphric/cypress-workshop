@@ -385,3 +385,19 @@ html .clear-completed:active {
 		bottom: 10px;
 	}
 }
+#note {
+  -moz-box-shadow:    0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #f85252;
+  bottom: 0;
+  box-shadow:         0 0 5px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: 500;
+  left: 0;
+  line-height: 2.5;
+  overflow: hidden; 
+  position: absolute;
+  right: 0;
+  text-align: center;
+  z-index: 101;
+}

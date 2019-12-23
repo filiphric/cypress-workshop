@@ -23,6 +23,7 @@
 </head>
 
 <body>
+  <section class="app">
   <section class="todoapp">
     <header class="header">
       <h1 data-cy="app-title">todos</h1>
@@ -51,11 +52,16 @@
     </p>
   </footer>
 
+  <div id="note" v-show="errorMessage">Sorry. There was an error creating todo item.</div>
+
+</section>
+
   <script src="vendor/polyfill.min.js"></script>
   <script src="vendor/vue.js"></script>
   <script src="vendor/vuex.js"></script>
   <script src="vendor/axios.min.js"></script>
   <script src="app.js"></script>
+
 </body>
 
 </html>

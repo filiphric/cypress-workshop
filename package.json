@@ -16,7 +16,7 @@
   "devDependencies": {
     "@testing-library/cypress": "^5.0.2",
     "concurrently": "4.1.2",
-    "cypress": "^3.6.1",
+    "cypress": "^3.8.0",
     "eslint": "^6.7.2",
     "eslint-plugin-chai-friendly": "^0.5.0",
     "eslint-plugin-cypress": "^2.7.0",

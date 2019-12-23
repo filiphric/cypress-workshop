@@ -1,65 +1,70 @@
 /* global Vue, Vuex, axios, FileReader, window, Promise */
 /* eslint-disable no-console */
-;(function () {
-  Vue.use(Vuex)
+(function () {
+  Vue.use(Vuex);
 
   function randomId () {
     return Math.random()
       .toString()
-      .substr(2, 10)
+      .substr(2, 10);
   }
 
   const store = new Vuex.Store({
     state: {
       loading: true,
       todos: [],
-      newTodo: ''
+      newTodo: '',
+      errorMessage: false
     },
     getters: {
       newTodo: state => state.newTodo,
       todos: state => state.todos,
-      loading: state => state.loading
+      loading: state => state.loading,
+      errorMessage: state => state.errorMessage
     },
     mutations: {
       SET_LOADING (state, flag) {
-        state.loading = flag
+        state.loading = flag;
+      },
+      SHOW_ERROR (state, flag) {
+        state.errorMessage = flag;
       },
       SET_TODOS (state, todos) {
-        state.todos = todos
+        state.todos = todos;
       },
       SET_NEW_TODO (state, todo) {
-        state.newTodo = todo
+        state.newTodo = todo;
       },
       ADD_TODO (state, todoObject) {
-        console.log('add todo', todoObject)
-        state.todos.push(todoObject)
+        console.log('add todo', todoObject);
+        state.todos.push(todoObject);
       },
       REMOVE_TODO (state, todo) {
-        let todos = state.todos
-        todos.splice(todos.indexOf(todo), 1)
+        let todos = state.todos;
+        todos.splice(todos.indexOf(todo), 1);
       },
       CLEAR_NEW_TODO (state) {
-        state.newTodo = ''
-        console.log('clearing new todo')
+        state.newTodo = '';
+        console.log('clearing new todo');
       }
     },
     actions: {
       loadTodos ({ commit }) {
-        commit('SET_LOADING', true)
+        commit('SET_LOADING', true);
 
         axios
           .get('/todos')
           .then(r => r.data)
           .then(todos => {
-            console.log('got %d todos', todos.length)
-            commit('SET_TODOS', todos)
-            commit('SET_LOADING', false)
+            console.log('got %d todos', todos.length);
+            commit('SET_TODOS', todos);
+            commit('SET_LOADING', false);
           })
           .catch(e => {
-            console.error('could not load todos')
-            console.error(e.message)
-            console.error(e.response.data)
-          })
+            console.error('could not load todos');
+            console.error(e.message);
+            console.error(e.response.data);
+          });
       },
 
       /**
@@ -69,40 +74,48 @@
        * @param {string} todo Message
        */
       setNewTodo ({ commit }, todo) {
-        commit('SET_NEW_TODO', todo)
+        commit('SET_NEW_TODO', todo);
       },
       addTodo ({ commit, state }) {
         if (!state.newTodo) {
           // do not add empty todos
-          return
+          return;
         }
         const todo = {
           title: state.newTodo,
           completed: false,
           id: randomId()
-        }
-        axios.post('/todos', todo).then(() => {
-          commit('ADD_TODO', todo)
-        })
+        };
+        axios.post('/todos', todo).then(() => {  
+                  
+          commit('ADD_TODO', todo);
+          
+        }).catch(function (error) {
+          commit('SHOW_ERROR', true);
+          setTimeout(() => {
+            commit('SHOW_ERROR', false);
+          }, 3000);
+            
+        });
       },
       addEntireTodo ({ commit }, todoFields) {
-        debugger
+        debugger;
         const todo = {
           ...todoFields,
           id: randomId()
-        }
+        };
         axios.post('/todos', todo).then(() => {
-          commit('ADD_TODO', todo)
-        })
+          commit('ADD_TODO', todo);
+        });
       },
       removeTodo ({ commit }, todo) {
         axios.delete(`/todos/${todo.id}`).then(() => {
-          console.log('removed todo', todo.id, 'from the server')
-          commit('REMOVE_TODO', todo)
-        })
+          console.log('removed todo', todo.id, 'from the server');
+          commit('REMOVE_TODO', todo);
+        });
       },
       clearNewTodo ({ commit }) {
-        commit('CLEAR_NEW_TODO')
+        commit('CLEAR_NEW_TODO');
       },
       // example promise-returning action
       addTodoAfterDelay ({ commit }, { milliseconds, title }) {
@@ -112,14 +125,14 @@
               title,
               completed: false,
               id: randomId()
-            }
-            commit('ADD_TODO', todo)
-            resolve()
-          }, milliseconds)
-        })
+            };
+            commit('ADD_TODO', todo);
+            resolve();
+          }, milliseconds);
+        });
       }
     }
-  })
+  });
 
   // app Vue instance
   const app = new Vue({
@@ -127,53 +140,56 @@
     data: {
       file: null
     },
-    el: '.todoapp',
+    el: '.app',
 
     created () {
-      this.$store.dispatch('loadTodos')
+      this.$store.dispatch('loadTodos');
     },
 
     // computed properties
     // https://vuejs.org/guide/computed.html
     computed: {
       loading () {
-        return this.$store.getters.loading
+        return this.$store.getters.loading;
       },
       newTodo () {
-        return this.$store.getters.newTodo
+        return this.$store.getters.newTodo;
       },
       todos () {
-        return this.$store.getters.todos
-      }
+        return this.$store.getters.todos;
+      },
+      errorMessage () {
+        return this.$store.getters.errorMessage;
+      },
     },
 
     // methods that implement data logic.
     // note there's no DOM manipulation here at all.
     methods: {
       setNewTodo (e) {
-        this.$store.dispatch('setNewTodo', e.target.value)
+        this.$store.dispatch('setNewTodo', e.target.value);
       },
 
       addTodo (e) {
-        e.target.value = ''
-        this.$store.dispatch('addTodo')
-        this.$store.dispatch('clearNewTodo')
+        e.target.value = '';
+        this.$store.dispatch('addTodo');
+        this.$store.dispatch('clearNewTodo');
       },
 
       removeTodo (todo) {
-        this.$store.dispatch('removeTodo', todo)
+        this.$store.dispatch('removeTodo', todo);
       },
 
       // utility method for create a todo with title and completed state
       addEntireTodo (title, completed = false) {
-        this.$store.dispatch('addEntireTodo', { title, completed })
+        this.$store.dispatch('addEntireTodo', { title, completed });
       }
     }
-  })
+  });
 
   // if you want to expose "app" globally only
   // during end-to-end tests you can guard it using "window.Cypress" flag
   // if (window.Cypress) {
-  window.app = app
+  window.app = app;
   // }
-})()
+})();
