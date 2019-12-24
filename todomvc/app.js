@@ -66,6 +66,15 @@
             console.error(e.response.data);
           });
       },
+      fetchTodos ({ commit }) {
+
+        fetch('/todos')
+          .then(response => response.json())
+          .then(todos => {
+            commit('SET_TODOS', todos);
+          });
+         
+      },
       /**
        * Sets text for the future todo
        *
@@ -93,7 +102,7 @@
           commit('SHOW_ERROR', true);
           setTimeout(() => {
             commit('SHOW_ERROR', false);
-          }, 3000);
+          }, 4000);
             
         });
       },
@@ -115,21 +124,8 @@
       },
       clearNewTodo ({ commit }) {
         commit('CLEAR_NEW_TODO');
-      },
-      // example promise-returning action
-      addTodoAfterDelay ({ commit }, { milliseconds, title }) {
-        return new Promise(resolve => {
-          setTimeout(() => {
-            const todo = {
-              title,
-              completed: false,
-              id: randomId()
-            };
-            commit('ADD_TODO', todo);
-            resolve();
-          }, milliseconds);
-        });
       }
+     
     }
   });
 
@@ -140,7 +136,11 @@
       file: null
     },
     el: '.app',
-
+    watch: {
+      todosLoad: setInterval( () => {         
+        app.$store.dispatch('fetchTodos');
+      }, 3000)
+    },
     created () {
       this.$store.dispatch('loadTodos');
     },
@@ -186,9 +186,6 @@
     }
   });
 
-  // if you want to expose "app" globally only
-  // during end-to-end tests you can guard it using "window.Cypress" flag
-  // if (window.Cypress) {
   window.app = app;
-  // }
+
 })();
