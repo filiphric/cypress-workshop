@@ -9,13 +9,10 @@
     "install:todomvc": "cd todomvc && npm install",
     "postinstall": "npm run install:todomvc",
     "reset:todomvc": "cd todomvc && npm run reset",
-    "start": "concurrently npm:todomvc:open npm:todomvc:start",
-    "todomvc:open": "cd todomvc && npm run open",
-    "todomvc:start": "cd todomvc && npm start"
+    "start": "cd todomvc && npm start"
   },
   "devDependencies": {
     "@testing-library/cypress": "^5.0.2",
-    "concurrently": "4.1.2",
     "cypress": "^3.8.0",
     "eslint": "^6.7.2",
     "eslint-plugin-chai-friendly": "^0.5.0",
