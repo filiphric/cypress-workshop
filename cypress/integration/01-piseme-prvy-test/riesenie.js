@@ -6,13 +6,6 @@ it('loads', () => {
     .visit('localhost:3000');
 
   cy
-    .log('footer is visible');
-
-  cy
-    .get('.new-todo')
-    .get('footer');
-
-  cy
     .log('heading is visible');
 
   cy
