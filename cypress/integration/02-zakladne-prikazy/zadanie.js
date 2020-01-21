@@ -29,9 +29,14 @@ it('Adds many items', () => {
 
 });
 
-it('Marks item as completed and deletes item', () => {
+it('Marks item as completed', () => {
 
-  // označ poloźku ako hotovú a následne ju vymaž
+  // označ poloźku ako hotovú
+  
+});
+
+it('Delete todo item', () => {
+
   // pozor: na button „x“ pre vymazanie položky sa nedá kliknúť, pretože sa zobrazuje až na hoveri
   
 });
