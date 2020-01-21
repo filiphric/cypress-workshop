@@ -1,37 +1,56 @@
-describe('1', () => {
+describe('Adding items to app', () => {
 
-  before( () => {
-
-    cy.log('Akcia číslo 1');
+  before(() => {
+    
+    cy
+      .log('test suite begins');
 
   });
 
   beforeEach(() => {
+    
+    cy
+      .visit('localhost:3000');
 
-    cy.log('Akcia číslo 3');
+  });
+
+  after(() => {
+    
+    cy
+      .log('test suite finished');
+
+  });
+
+  afterEach(() => {
+    
+    cy
+      .log('test case finished');
+
+  });
+
+  it('Marks item as completed', () => {
+  
+    cy
+      .get('.new-todo')
+      .type('simple{enter}');
+  
+    cy
+      .get('input[type="checkbox"]')
+      .check();
+  
+  });
+  
+  it('Delete todo item', () => {
+  
+    cy
+      .get('.destroy')
+      .click({ force: true });
+  
+    cy
+      .contains('simple')
+      .should('not.exist');
     
   });
-
-  context('1.2', () => {
-
-    before(() => {
-
-      cy.log('Akcia číslo 2');
-      
-    });
-
-    beforeEach(() => {
-
-      cy.log('Akcia číslo 4');
-      
-    });
-
-    it('1.2.1', () => {
-
-      cy.log('Akcia číslo 5');
   
-    });
-        
-  });
-
 });
+

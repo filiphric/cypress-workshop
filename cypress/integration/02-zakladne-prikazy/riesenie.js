@@ -64,7 +64,7 @@ it('Adds many items', () => {
   
 });
 
-it('Marks item as completed and deletes item', () => {
+it('Marks item as completed', () => {
 
   cy
     .visit('localhost:3000');
@@ -89,4 +89,19 @@ it('Marks item as completed and deletes item', () => {
     .contains('simple')
     .should('not.exist');
 
+});
+
+it('Delete todo item', () => {
+
+  cy
+    .visit('localhost:3000');
+
+  cy
+    .get('.destroy')
+    .click({ force: true });
+
+  cy
+    .contains('simple')
+    .should('not.exist');
+  
 });
