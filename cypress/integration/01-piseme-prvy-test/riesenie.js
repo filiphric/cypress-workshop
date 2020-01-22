@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-// @ts-check
 it('loads', () => {
 
   cy
