@@ -8,7 +8,7 @@ it('stubs items', () => {
     .as('getTodoList');
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
   cy
     .wait('@getTodoList');
@@ -28,8 +28,9 @@ it('loads items from a fixture', () => {
   cy
     .route('GET', '/todos', 'fx:two-items')    
     .as('getTodoList');
+    
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
   cy
     .log('there are two items in list')
@@ -52,7 +53,7 @@ it('posts new item to the server', () => {
     .as('createTodoItem');  
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
   cy
     .log('add new item')
@@ -85,7 +86,7 @@ it('shows error when adding new item', () => {
     .as('createTodoItem');  
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
   cy
     .log('adds new item')
@@ -114,7 +115,7 @@ it('loads slowly and sees „loading items“ element', () => {
     .as('getTodoList');
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
   cy
     .log('loading message is visible')

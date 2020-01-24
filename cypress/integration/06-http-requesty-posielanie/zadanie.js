@@ -1,17 +1,21 @@
-it('Creates todo item via http request and checks its existence in DOM', () => {
-  
-});
+describe('Sending todos via http request', () => {
 
-it('Creates completed todo', () => {
-  
-});
+  beforeEach(() => {
+    
+    // pridaj do before each request, ktorý zresetuje todo list
 
-it('Completes todo via http request', () => {
-  
-});
+  });
 
-it('Resets todo list befor opening app', () => {
-
-  // url pre resetovanie todo listu je /reset
+  it('Creates todo item via http request and checks its existence in DOM', () => {
   
+  });
+
+  it('Creates completed todo', () => {
+  
+  });
+
+  it('Deletes todo via http request', () => {
+  
+  });
+
 });

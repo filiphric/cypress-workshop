@@ -15,6 +15,8 @@ it('adds an item to the list', () => {
     .type('first item{enter}');
 
   cy
-    .wait('@createTodoItem');
+    .wait('@createTodoItem')
+    .its('status')
+    .should('eq', 200);
   
 });

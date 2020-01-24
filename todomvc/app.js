@@ -136,11 +136,11 @@
       file: null
     },
     el: '.app',
-    watch: {
-      todosLoad: setInterval( () => {         
-        app.$store.dispatch('fetchTodos');
-      }, 3000)
-    },
+    // watch: {
+    //   todosLoad: setInterval( () => {         
+    //     app.$store.dispatch('fetchTodos');
+    //   }, 3000)
+    // },
     created () {
       this.$store.dispatch('loadTodos');
     },

@@ -1,5 +1,7 @@
 it('stubs items', () => {
 
+  // uprav test tak, aby nahradil odpoveď servra a vrátil prázdny zoznam todo položiek
+
   cy
     .server();
 
@@ -8,7 +10,7 @@ it('stubs items', () => {
     .as('getTodoList');
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
   cy
     .wait('@getTodoList');
@@ -26,7 +28,7 @@ it('loads items from a fixture', () => {
   // o tom, ako použiť fixtures sa dočítaš tu -> https://docs.cypress.io/api/commands/route.html#Fixtures
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
 });
 
@@ -35,7 +37,7 @@ it('posts new item to the server', () => {
   // začni test s 0 položkami, potom jednu pridaj
   
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
   cy
     .log('add new item')
@@ -54,7 +56,7 @@ it('shows error when adding new item', () => {
   // hint -> https://docs.cypress.io/api/commands/route.html#Options
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
   
 });
 
@@ -64,7 +66,7 @@ it('loads slowly and sees „loading items“ element', () => {
   // hint -> nastav delay servera, návod ako na to nájdeš v dokumentácii
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
 });
 
