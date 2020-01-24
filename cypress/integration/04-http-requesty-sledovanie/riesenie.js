@@ -1,23 +1,20 @@
-it('starts with zero items', () => {
+it('adds an item to the list', () => {
 
   cy
     .server();
 
   cy
-    .route('GET', '/todos')
-    .as('getTodoList');
+    .route('POST', '/todos')
+    .as('createTodoItem');
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
   cy
-    .wait('@getTodoList');
+    .get('.new-todo')
+    .type('first item{enter}');
 
   cy
-    .log('there are items in list');
-
-  cy
-    .get('li.todo')
-    .should('have.length', 0);
+    .wait('@createTodoItem');
   
 });

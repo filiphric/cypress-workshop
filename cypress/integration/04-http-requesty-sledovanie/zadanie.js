@@ -1,13 +1,10 @@
-it('starts with zero items', () => {
+it('adds an item to the list', () => {
 
   cy
-    .visit('/');
+    .visit('localhost:3000');
 
   cy
-    .log('there are items in list');
-
-  cy
-    .get('li.todo')
-    .should('have.length', 0);
+    .get('.new-todo')
+    .type('first item{enter}');
   
 });
