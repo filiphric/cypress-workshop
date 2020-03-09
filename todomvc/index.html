@@ -18,14 +18,14 @@
   <section class="todoapp">
     <header class="header">
       <h1 data-cy="app-title">todos</h1>
-      <input class="new-todo" id="new-todo" autofocus autocomplete="off" placeholder="What needs to be done?" :value="newTodo"
+      <input id="add-todo" class="new-todo" autocomplete="off" placeholder="What needs to be done?" data-cy="todo-input" :value="newTodo"
         @input="setNewTodo" @keyup.enter="addTodo">
     </header>
     <section class="main" v-show="todos.length" v-cloak>
       <ul class="todo-list">
         <li v-for="todo in todos" class="todo" :key="todo.id" :class="{ completed: todo.completed }">
           <div class="view">
-            <input class="toggle" type="checkbox" v-model="todo.completed">
+            <input class="toggle" type="checkbox" v-model="todo.completed" @click="completeTodo(todo)">
             <label>{{ todo.title }}</label>
             <button class="destroy" @click="removeTodo(todo)"></button>
           </div>
@@ -43,7 +43,7 @@
     </p>
   </footer>
 
-  <div id="note" v-show="errorMessage" v-cloak>Sorry. There was an error creating todo item.</div>
+  <div id="error" v-show="errorMessage" v-cloak>Sorry. There was an error creating todo item.</div>
 
 </section>
 

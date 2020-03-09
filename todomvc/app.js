@@ -39,8 +39,14 @@
         console.log('add todo', todoObject);
         state.todos.push(todoObject);
       },
+      COMPLETE_TODO (state, todo) {
+        let todos = state.todos;
+        console.log('check todo ' + todo.id);
+        console.log(todos.indexOf(todo));
+      },
       REMOVE_TODO (state, todo) {
         let todos = state.todos;
+        console.log('removing todo');
         todos.splice(todos.indexOf(todo), 1);
       },
       CLEAR_NEW_TODO (state) {
@@ -65,15 +71,6 @@
             console.error(e.message);
             console.error(e.response.data);
           });
-      },
-      fetchTodos ({ commit }) {
-
-        fetch('/todos')
-          .then(response => response.json())
-          .then(todos => {
-            commit('SET_TODOS', todos);
-          });
-         
       },
       /**
        * Sets text for the future todo
@@ -106,14 +103,9 @@
             
         });
       },
-      addEntireTodo ({ commit }, todoFields) {
-        debugger;
-        const todo = {
-          ...todoFields,
-          id: randomId()
-        };
-        axios.post('/todos', todo).then(() => {
-          commit('ADD_TODO', todo);
+      completeTodo ({ commit }, todo) {
+        axios.patch(`/todos/${todo.id}`, {completed: !todo.completed}).then(() => {
+          commit('COMPLETE_TODO', todo);
         });
       },
       removeTodo ({ commit }, todo) {
@@ -136,11 +128,6 @@
       file: null
     },
     el: '.app',
-    // watch: {
-    //   todosLoad: setInterval( () => {         
-    //     app.$store.dispatch('fetchTodos');
-    //   }, 3000)
-    // },
     created () {
       this.$store.dispatch('loadTodos');
     },
@@ -173,6 +160,10 @@
         e.target.value = '';
         this.$store.dispatch('addTodo');
         this.$store.dispatch('clearNewTodo');
+      },
+
+      completeTodo (todo) {
+        this.$store.dispatch('completeTodo', todo);
       },
 
       removeTodo (todo) {
